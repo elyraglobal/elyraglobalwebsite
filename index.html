@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elyra Global - Precision Engineering for Digital Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-bright": "rgb(var(--color-surface-bright) / <alpha-value>)",
+                      "tertiary": "rgb(var(--color-tertiary) / <alpha-value>)",
+                      "on-tertiary-container": "rgb(var(--color-on-tertiary-container) / <alpha-value>)",
+                      "on-secondary-fixed": "rgb(var(--color-on-secondary-fixed) / <alpha-value>)",
+                      "surface": "rgb(var(--color-surface) / <alpha-value>)",
+                      "primary-fixed": "rgb(var(--color-primary-fixed) / <alpha-value>)",
+                      "on-primary-container": "rgb(var(--color-on-primary-container) / <alpha-value>)",
+                      "inverse-surface": "rgb(var(--color-inverse-surface) / <alpha-value>)",
+                      "on-primary-fixed": "rgb(var(--color-on-primary-fixed) / <alpha-value>)",
+                      "primary-fixed-dim": "rgb(var(--color-primary-fixed-dim) / <alpha-value>)",
+                      "on-tertiary-fixed": "rgb(var(--color-on-tertiary-fixed) / <alpha-value>)",
+                      "surface-tint": "rgb(var(--color-surface-tint) / <alpha-value>)",
+                      "error": "rgb(var(--color-error) / <alpha-value>)",
+                      "tertiary-container": "rgb(var(--color-tertiary-container) / <alpha-value>)",
+                      "secondary-container": "rgb(var(--color-secondary-container) / <alpha-value>)",
+                      "on-background": "rgb(var(--color-on-background) / <alpha-value>)",
+                      "background": "rgb(var(--color-background) / <alpha-value>)",
+                      "tertiary-fixed-dim": "rgb(var(--color-tertiary-fixed-dim) / <alpha-value>)",
+                      "on-secondary-container": "rgb(var(--color-on-secondary-container) / <alpha-value>)",
+                      "surface-container-low": "rgb(var(--color-surface-container-low) / <alpha-value>)",
+                      "inverse-primary": "rgb(var(--color-inverse-primary) / <alpha-value>)",
+                      "on-primary": "rgb(var(--color-on-primary) / <alpha-value>)",
+                      "secondary": "rgb(var(--color-secondary) / <alpha-value>)",
+                      "surface-container-lowest": "rgb(var(--color-surface-container-lowest) / <alpha-value>)",
+                      "on-surface-variant": "rgb(var(--color-on-surface-variant) / <alpha-value>)",
+                      "error-container": "rgb(var(--color-error-container) / <alpha-value>)",
+                      "on-tertiary": "rgb(var(--color-on-tertiary) / <alpha-value>)",
+                      "primary-container": "rgb(var(--color-primary-container) / <alpha-value>)",
+                      "on-surface": "rgb(var(--color-on-surface) / <alpha-value>)",
+                      "on-error-container": "rgb(var(--color-on-error-container) / <alpha-value>)",
+                      "secondary-fixed": "rgb(var(--color-secondary-fixed) / <alpha-value>)",
+                      "surface-container-high": "rgb(var(--color-surface-container-high) / <alpha-value>)",
+                      "primary": "rgb(var(--color-primary) / <alpha-value>)",
+                      "on-secondary": "rgb(var(--color-on-secondary) / <alpha-value>)",
+                      "on-error": "rgb(var(--color-on-error) / <alpha-value>)",
+                      "outline": "rgb(var(--color-outline) / <alpha-value>)",
+                      "on-primary-fixed-variant": "rgb(var(--color-on-primary-fixed-variant) / <alpha-value>)",
+                      "surface-container-highest": "rgb(var(--color-surface-container-highest) / <alpha-value>)",
+                      "on-secondary-fixed-variant": "rgb(var(--color-on-secondary-fixed-variant) / <alpha-value>)",
+                      "secondary-fixed-dim": "rgb(var(--color-secondary-fixed-dim) / <alpha-value>)",
+                      "on-tertiary-fixed-variant": "rgb(var(--color-on-tertiary-fixed-variant) / <alpha-value>)",
+                      "outline-variant": "rgb(var(--color-outline-variant) / <alpha-value>)",
+                      "surface-variant": "rgb(var(--color-surface-variant) / <alpha-value>)",
+                      "surface-container": "rgb(var(--color-surface-container) / <alpha-value>)",
+                      "inverse-on-surface": "rgb(var(--color-inverse-on-surface) / <alpha-value>)",
+                      "surface-dim": "rgb(var(--color-surface-dim) / <alpha-value>)",
+                      "tertiary-fixed": "rgb(var(--color-tertiary-fixed) / <alpha-value>)"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "grid-gutter": "24px",
+                      "md": "24px",
+                      "lg": "48px",
+                      "base": "8px",
+                      "xl": "80px",
+                      "grid-margin": "64px",
+                      "xs": "4px",
+                      "sm": "12px"
+              },
+              "fontFamily": {
+                      "hero-heading": [
+                              "Inter"
+                      ],
+                      "body-premium": [
+                              "Inter"
+                      ],
+                      "section-heading": [
+                              "Inter"
+                      ],
+                      "label-uppercase": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "hero-heading": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-premium": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "300"
+                              }
+                      ],
+                      "section-heading": [
+                              "42px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-uppercase": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        /* Dark Mode (Default) */
+        html {
+            color-scheme: dark;
+            --color-surface-bright: 56 57 58;
+            --color-tertiary: 225 222 225;
+            --color-on-tertiary-container: 81 80 82;
+            --color-on-secondary-fixed: 44 0 80;
+            --color-surface: 18 20 21;
+            --color-primary-fixed: 180 235 255;
+            --color-on-primary-container: 0 88 107;
+            --color-inverse-surface: 226 226 227;
+            --color-on-primary-fixed: 0 31 39;
+            --color-primary-fixed-dim: 60 215 255;
+            --color-on-tertiary-fixed: 28 27 29;
+            --color-surface-tint: 60 215 255;
+            --color-error: 255 180 171;
+            --color-tertiary-container: 197 194 197;
+            --color-secondary-container: 106 23 173;
+            --color-on-background: 226 226 227;
+            --color-background: 18 20 21;
+            --color-tertiary-fixed-dim: 200 198 200;
+            --color-on-secondary-container: 212 165 255;
+            --color-surface-container-low: 26 28 29;
+            --color-inverse-primary: 0 103 126;
+            --color-on-primary: 0 54 66;
+            --color-secondary: 222 183 255;
+            --color-surface-container-lowest: 12 14 15;
+            --color-on-surface-variant: 187 201 207;
+            --color-error-container: 147 0 10;
+            --color-on-tertiary: 49 48 50;
+            --color-primary-container: 0 212 255;
+            --color-on-surface: 226 226 227;
+            --color-on-error-container: 255 218 214;
+            --color-secondary-fixed: 240 219 255;
+            --color-surface-container-high: 40 42 43;
+            --color-primary: 168 232 255;
+            --color-on-secondary: 74 0 127;
+            --color-on-error: 105 0 5;
+            --color-outline: 133 147 152;
+            --color-on-primary-fixed-variant: 0 78 95;
+            --color-surface-container-highest: 51 53 54;
+            --color-on-secondary-fixed-variant: 103 18 170;
+            --color-secondary-fixed-dim: 222 183 255;
+            --color-on-tertiary-fixed-variant: 71 70 73;
+            --color-outline-variant: 60 73 78;
+            --color-surface-variant: 51 53 54;
+            --color-surface-container: 30 32 33;
+            --color-inverse-on-surface: 47 49 50;
+            --color-surface-dim: 18 20 21;
+            --color-tertiary-fixed: 229 225 228;
+        }
+
+        body {
+            background-color: rgb(var(--color-background));
+            color: rgb(var(--color-on-background));
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Light Mode */
+        html.light {
+            color-scheme: light;
+            --color-surface-bright: 240 235 245;
+            --color-tertiary: 28 27 29;
+            --color-on-tertiary-container: 174 172 176;
+            --color-on-secondary-fixed: 240 219 255;
+            --color-surface: 248 242 252;
+            --color-primary-fixed: 0 31 39;
+            --color-on-primary-container: 179 231 255;
+            --color-inverse-surface: 28 27 31;
+            --color-on-primary-fixed: 180 235 255;
+            --color-primary-fixed-dim: 0 106 122;
+            --color-on-tertiary-fixed: 229 225 228;
+            --color-surface-tint: 0 129 161;
+            --color-error: 179 38 30;
+            --color-tertiary-container: 71 63 81;
+            --color-secondary-container: 212 165 255;
+            --color-on-background: 28 27 31;
+            --color-background: 247 241 250;
+            --color-tertiary-fixed-dim: 221 213 224;
+            --color-on-secondary-container: 44 0 80;
+            --color-surface-container-low: 243 233 245;
+            --color-inverse-primary: 60 215 255;
+            --color-on-primary: 255 255 255;
+            --color-secondary: 106 23 173;
+            --color-surface-container-lowest: 252 248 254;
+            --color-on-surface-variant: 73 69 79;
+            --color-error-container: 249 222 220;
+            --color-on-tertiary: 229 225 228;
+            --color-primary-container: 0 106 122;
+            --color-on-surface: 28 27 31;
+            --color-on-error-container: 65 14 11;
+            --color-secondary-fixed: 44 0 80;
+            --color-surface-container-high: 238 225 242;
+            --color-primary: 0 129 161;
+            --color-on-secondary: 255 255 255;
+            --color-on-error: 255 255 255;
+            --color-outline: 121 116 126;
+            --color-on-primary-fixed-variant: 0 61 77;
+            --color-surface-container-highest: 232 226 238;
+            --color-on-secondary-fixed-variant: 103 18 170;
+            --color-secondary-fixed-dim: 197 168 255;
+            --color-on-tertiary-fixed-variant: 74 74 82;
+            --color-outline-variant: 202 199 208;
+            --color-surface-variant: 237 225 236;
+            --color-surface-container: 243 237 247;
+            --color-inverse-on-surface: 245 239 247;
+            --color-surface-dim: 243 237 247;
+            --color-tertiary-fixed: 28 27 29;
+        }
+
+        html.light body {
+            background-color: rgb(var(--color-background));
+            color: rgb(var(--color-on-background));
+        }
+
+        .grid-pattern {
+            background-image:
+                linear-gradient(to right, rgba(39, 39, 42, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(39, 39, 42, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            transition: background-image 0.3s ease;
+        }
+
+        html.light .grid-pattern {
+            background-image:
+                linear-gradient(to right, rgba(28, 27, 31, 0.08) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(28, 27, 31, 0.08) 1px, transparent 1px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #00d4ff, #6a17ad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        html.light .gradient-text {
+            background: linear-gradient(to right, #0081a1, #6a17ad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #00d4ff, #6a17ad);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        html.light .btn-primary {
+            background: linear-gradient(to right, #0081a1, #6a17ad);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+        html.light .btn-primary:hover {
+            box-shadow: 0 0 15px rgba(0, 129, 161, 0.3);
+        }
+
+        .btn-secondary {
+            border: 1px solid #27272a;
+            color: #e2e2e3;
+            transition: all 0.3s ease;
+        }
+
+        html.light .btn-secondary {
+            border: 1px solid #cac7d0;
+            color: #1c1b1f;
+        }
+
+        .btn-secondary:hover {
+            border-color: #00d4ff;
+            color: #00d4ff;
+        }
+
+        html.light .btn-secondary:hover {
+            border-color: #0081a1;
+            color: #0081a1;
+        }
+
+        .glass-card {
+            background: rgba(39, 39, 42, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid #27272a;
+            transition: all 0.4s ease;
+        }
+
+        html.light .glass-card {
+            background: rgba(28, 27, 31, 0.06);
+            border: 1px solid #cac7d0;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-4px);
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(106, 23, 173, 0.1));
+            border-top-color: #00d4ff;
+            box-shadow: 0 10px 30px -10px rgba(0, 212, 255, 0.15);
+        }
+
+        html.light .glass-card:hover {
+            background: linear-gradient(135deg, rgba(0, 129, 161, 0.08), rgba(106, 23, 173, 0.08));
+            border-top-color: #0081a1;
+            box-shadow: 0 10px 30px -10px rgba(0, 129, 161, 0.12);
+        }
+
+        .shimmer-effect {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shimmer-effect::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+
+        html.light .shimmer-effect::after {
+            background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.03), transparent);
+        }
+
+        .shimmer-effect:hover::after {
+            opacity: 1;
+            left: 100%;
+        }
+
+        .number-muted {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+            color: transparent;
+        }
+
+        html.light .number-muted {
+            -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .dot-matrix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            animation: move-dots 60s linear infinite;
+        }
+
+        html.light .dot-matrix {
+            background-image: radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+        }
+
+        @keyframes move-dots {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+
+        .animated-line {
+            position: absolute;
+            width: 1px;
+            height: 100vh;
+            background: linear-gradient(to bottom, transparent, rgba(0, 212, 255, 0.3), transparent);
+            animation: move-line 8s infinite linear;
+            opacity: 0;
+        }
+
+        html.light .animated-line {
+            background: linear-gradient(to bottom, transparent, rgba(0, 129, 161, 0.2), transparent);
+        }
+
+        @keyframes move-line {
+            0% { transform: translateY(-100%); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(100%); opacity: 0; }
+        }
+
+        /* Theme Toggle Button Styles */
+        .theme-toggle {
+            cursor: pointer;
+            padding: 0;
+            border: none;
+            background: none;
+            font-size: 1.25rem;
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            transform: rotate(20deg);
+        }
+
+        .theme-icon {
+            display: inline-block;
+            transition: opacity 0.3s ease;
+        }
+
+        .theme-icon.hidden {
+            display: none;
+        }
+
+        /* Spotlight Effect */
+        .spotlight {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -2;
+            overflow: hidden;
+        }
+
+        .spotlight-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle at center,
+                rgba(0, 212, 255, 0.15) 0%,
+                rgba(0, 212, 255, 0.08) 30%,
+                rgba(106, 23, 173, 0.05) 60%,
+                transparent 100%);
+            filter: blur(80px);
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+        }
+
+        html.light .spotlight-glow {
+            background: radial-gradient(circle at center,
+                rgba(0, 129, 161, 0.12) 0%,
+                rgba(0, 129, 161, 0.06) 30%,
+                rgba(106, 23, 173, 0.04) 60%,
+                transparent 100%);
+        }
+
+        /* Section Background Enhancements */
+        .section-background {
+            position: relative;
+            background: linear-gradient(135deg,
+                rgba(0, 212, 255, 0.02) 0%,
+                rgba(106, 23, 173, 0.02) 100%);
+        }
+
+        html.light .section-background {
+            background: linear-gradient(135deg,
+                rgba(0, 129, 161, 0.015) 0%,
+                rgba(106, 23, 173, 0.015) 100%);
+        }
+
+        /* Enhanced Hero Background */
+        .hero-background {
+            background: linear-gradient(180deg,
+                rgba(0, 212, 255, 0.08) 0%,
+                rgba(18, 20, 21, 0) 50%,
+                rgba(106, 23, 173, 0.05) 100%);
+        }
+
+        html.light .hero-background {
+            background: linear-gradient(180deg,
+                rgba(0, 129, 161, 0.06) 0%,
+                rgba(247, 241, 250, 0) 50%,
+                rgba(106, 23, 173, 0.04) 100%);
+        }
+
+        /* Social Media Icons */
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(0, 212, 255, 0.1);
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            transition: all 0.3s ease;
+            font-size: 1.25rem;
+        }
+
+        .social-icon:hover {
+            background: rgba(0, 212, 255, 0.2);
+            border-color: rgba(0, 212, 255, 0.6);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 212, 255, 0.2);
+        }
+
+        html.light .social-icon {
+            background: rgba(0, 129, 161, 0.1);
+            color: #0081a1;
+            border: 1px solid rgba(0, 129, 161, 0.3);
+        }
+
+        html.light .social-icon:hover {
+            background: rgba(0, 129, 161, 0.2);
+            border-color: rgba(0, 129, 161, 0.6);
+            box-shadow: 0 8px 20px rgba(0, 129, 161, 0.15);
+        }
+
+        /* Gradient Divider */
+        .gradient-divider {
+            height: 1px;
+            background: linear-gradient(to right,
+                transparent,
+                rgba(0, 212, 255, 0.3),
+                transparent);
+        }
+
+        html.light .gradient-divider {
+            background: linear-gradient(to right,
+                transparent,
+                rgba(0, 129, 161, 0.2),
+                transparent);
+        }
+
+        /* Accent Gradient Border */
+        .accent-border {
+            position: relative;
+            border-top: 2px solid transparent;
+            background-image: linear-gradient(rgb(var(--color-background)), rgb(var(--color-background))),
+                              linear-gradient(90deg, #00d4ff, #6a17ad);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+        }
+
+        html.light .accent-border {
+            background-image: linear-gradient(rgb(var(--color-background)), rgb(var(--color-background))),
+                              linear-gradient(90deg, #0081a1, #6a17ad);
+        }
+
+        /* Smooth scroll */
+        html { scroll-behavior: smooth; }
+
+        /* ===== CONTACT MODAL ===== */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .modal-box {
+            background: rgb(var(--color-surface-container));
+            border: 1px solid rgb(var(--color-outline-variant));
+            border-radius: 1rem;
+            padding: 2.5rem;
+            width: 90%;
+            max-width: 640px;
+            position: relative;
+            transform: scale(0.95) translateY(10px);
+            transition: transform 0.3s ease;
+        }
+        .modal-overlay.active .modal-box {
+            transform: scale(1) translateY(0);
+        }
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: rgb(var(--color-on-surface-variant));
+            font-size: 1.5rem;
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.2s;
+        }
+        .modal-close:hover { color: rgb(var(--color-on-surface)); }
+
+        /* Platform cards inside contact modal */
+        .platform-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            border-radius: 0.75rem;
+            border: 1px solid rgb(var(--color-outline-variant));
+            background: rgb(var(--color-surface-container-low));
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            color: rgb(var(--color-on-surface));
+        }
+        .platform-card:hover { transform: translateY(-2px); }
+        .platform-card.linkedin:hover  { background: rgba(10,102,194,0.15); border-color: #0A66C2; }
+        .platform-card.whatsapp:hover  { background: rgba(37,211,102,0.15); border-color: #25D366; }
+        .platform-card.instagram:hover {
+            background: linear-gradient(135deg, rgba(193,53,132,0.15), rgba(253,29,29,0.1));
+            border-color: #C13584;
+        }
+        .platform-card.gmail:hover     { background: rgba(234,67,53,0.15); border-color: #EA4335; }
+        .platform-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        /* ===== CASE STUDY MODAL ===== */
+        .case-modal-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(6px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .case-modal-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .case-modal-box {
+            background: rgb(var(--color-surface-container));
+            border: 1px solid rgb(var(--color-outline-variant));
+            border-radius: 1rem;
+            width: 90%;
+            max-width: 700px;
+            max-height: 88vh;
+            overflow-y: auto;
+            position: relative;
+            transform: scale(0.95) translateY(10px);
+            transition: transform 0.3s ease;
+        }
+        .case-modal-overlay.active .case-modal-box {
+            transform: scale(1) translateY(0);
+        }
+        .case-modal-header-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 1rem 1rem 0 0;
+        }
+        .case-modal-body { padding: 2rem; }
+        .result-pill {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(106,23,173,0.15));
+            border: 1px solid rgba(0,212,255,0.25);
+            border-radius: 2rem;
+            padding: 0.4rem 0.9rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: rgb(var(--color-primary));
+            margin: 0.25rem;
+        }
+        html.light .result-pill {
+            background: linear-gradient(135deg, rgba(0,129,161,0.1), rgba(106,23,173,0.1));
+            border-color: rgba(0,129,161,0.2);
+            color: rgb(var(--color-primary));
+        }
+
+        /* ===== CTA TRUST PILLS ===== */
+        .trust-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1rem;
+            border-radius: 2rem;
+            border: 1px solid rgba(0,212,255,0.2);
+            background: rgba(0,212,255,0.05);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            color: rgb(var(--color-on-surface-variant));
+            margin: 0.25rem;
+        }
+        html.light .trust-pill {
+            border-color: rgba(0,129,161,0.2);
+            background: rgba(0,129,161,0.04);
+        }
+
+    </style>
+</head>
+<body class="font-body-premium text-body-premium antialiased relative min-h-screen flex flex-col bg-background text-on-background transition-colors duration-300">
+<!-- Spotlight Effect -->
+<div class="spotlight">
+    <div class="spotlight-glow" id="spotlightGlow"></div>
+</div>
+<!-- Background Grid & Automation Visuals -->
+<div class="fixed inset-0 grid-pattern pointer-events-none z-[-1]"></div>
+<div class="dot-matrix"></div>
+<div class="animated-line left-[20%]" style="animation-delay: 0s;"></div>
+<div class="animated-line left-[50%]" style="animation-delay: 4s;"></div>
+<div class="animated-line left-[80%]" style="animation-delay: 2s;"></div>
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-surface-variant/50 transition-colors duration-300">
+<div class="flex justify-between items-center h-20 px-8 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black bg-gradient-to-r from-primary-container to-secondary-container bg-clip-text text-transparent tracking-tight">
+                Elyra Global
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-inter tracking-tight font-medium text-sm">
+<a class="text-primary-container border-b border-primary-container pb-1 scale-95 active:scale-90 transition-transform" href="#services">Services</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-all duration-300 scale-95 active:scale-90" href="#process">Process</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-all duration-300 scale-95 active:scale-90" href="#case-studies">Case Studies</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-all duration-300 scale-95 active:scale-90" href="#company">Company</a>
+</div>
+<div class="flex items-center space-x-6">
+<button aria-label="Toggle Dark/Light Mode" id="themeToggle" class="theme-toggle text-on-surface-variant hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined theme-icon" id="lightIcon">light_mode</span>
+<span class="material-symbols-outlined theme-icon hidden" id="darkIcon">dark_mode</span>
+</button>
+<button onclick="openModal('contact-modal')" class="hidden md:block btn-primary px-6 py-2.5 rounded-full font-label-uppercase text-label-uppercase tracking-wider">
+                    Get Started
+    </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4 sm:px-8 overflow-hidden hero-background">
+<div class="max-w-[1440px] mx-auto w-full flex flex-col items-center text-center z-10">
+<div class="mb-8 inline-flex items-center space-x-2 px-4 py-2 rounded-full border border-surface-variant bg-surface-container-low/50 backdrop-blur-md transition-colors duration-300">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-uppercase text-label-uppercase text-on-surface-variant">Innovation-First Digital Partner</span>
+</div>
+<h1 class="font-hero-heading text-hero-heading text-on-surface max-w-5xl mx-auto mb-8 leading-tight">
+                We Build What Your <br/>
+<span class="gradient-text">Business Deserves</span>
+</h1>
+<p class="font-body-premium text-body-premium text-on-surface-variant max-w-2xl mx-auto mb-12">
+                Precision engineering meets creative expression. We construct high-end digital solutions that bridge the gap between technical rigor and visionary design for modern enterprises.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-20">
+<button onclick="openModal('contact-modal')" class="btn-primary shimmer-effect px-8 py-4 rounded-full font-label-uppercase text-label-uppercase tracking-wider w-full sm:w-auto">
+                    Book a Free Strategy Call
+                </button>
+<a href="#services" class="btn-secondary shimmer-effect px-8 py-4 rounded-full font-label-uppercase text-label-uppercase tracking-wider w-full sm:w-auto text-center">
+                    Explore Our Work
+                </a>
+</div>
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant tracking-[0.2em] opacity-60">
+                INTELLIGENCE · PRECISION · VISION
+            </div>
+</div>
+<!-- Decorative Glow -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-container/5 rounded-full blur-[120px] pointer-events-none"></div>
+</section>
+<!-- Services Section -->
+<section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full relative z-10 section-background rounded-3xl my-8" id="services">
+<div class="mb-16">
+<h2 class="font-label-uppercase text-label-uppercase text-primary-container mb-4 tracking-widest">WHAT WE DO</h2>
+<h3 class="font-section-heading text-section-heading text-on-surface">Our Services</h3>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Spanning Card -->
+<div class="glass-card shimmer-effect rounded-xl p-8 flex flex-col justify-between lg:col-span-2 lg:row-span-2 min-h-[400px]">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6 block" style="font-variation-settings: 'FILL' 1;">code</span>
+<h4 class="text-2xl font-bold text-on-surface mb-4">Web Design &amp; Development</h4>
+<p class="text-on-surface-variant">Architectural-grade digital platforms built for scale, performance, and striking visual impact. We craft bespoke solutions tailored to complex enterprise needs.</p>
+</div>
+<div class="mt-8">
+<img alt="Code structure" class="w-full h-48 object-cover rounded-lg opacity-80" data-alt="A sleek, modern dual-monitor workstation displaying complex programming code. The room is dimly lit with a sophisticated dark-mode aesthetic, featuring subtle cyan and violet ambient LED backlighting that casts a high-tech glow on a minimalist black desk. The mood is focused, precise, and heavily engineered, embodying premium digital craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzQ3tsTuokOMMn7VYL36qQgHWU0JOBKh9k6nGz7RZmO_73hREik3KhAUTauoAJTItRdQjQul0AKQrbmA44c1qaSZAPGPY1t3iZZtN3u8bAbnq703qY7cwkNoMzzo0xJIAfmGeRmg_OnEXnrFvWCQ50SZ_ujG-F7RPhB9OC6h7qmjwjIBYCZtrrp5_lHyumzmvRN03MTmUY-C353I3j2vmZ4UTsm8P5z5kuzTqBWboAOw8z4WJ1uA_wsDsVyMvB6OPtKyi5I7Wc02WA"/>
+</div>
+</div>
+<!-- Standard Cards -->
+<div class="glass-card shimmer-effect rounded-xl p-8 flex flex-col">
+<span class="material-symbols-outlined text-3xl text-secondary-container mb-4 block">design_services</span>
+<h4 class="text-xl font-bold text-on-surface mb-2">UI/UX Design</h4>
+<p class="text-on-surface-variant text-sm mb-4">Intuitive, user-centric interfaces designed with minimalism and functional clarity.</p>
+<ul class="space-y-2 mt-auto">
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-secondary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>User Flow Architecture</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-secondary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Wireframe &amp; Prototype</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-secondary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Component Design System</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-secondary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Usability Testing</li>
+</ul>
+</div>
+<div class="glass-card shimmer-effect rounded-xl p-8 flex flex-col">
+<span class="material-symbols-outlined text-3xl text-primary-container mb-4 block">dns</span>
+<h4 class="text-xl font-bold text-on-surface mb-2">Web Hosting</h4>
+<p class="text-on-surface-variant text-sm mb-4">Secure, high-performance cloud infrastructure ensuring absolute reliability.</p>
+<ul class="space-y-2 mt-auto">
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-primary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>99.9% Uptime SLA</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-primary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>CDN + SSL Included</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-primary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Automated Backups</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-primary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>24/7 Monitoring</li>
+</ul>
+</div>
+<div class="glass-card shimmer-effect rounded-xl p-8 flex flex-col">
+<span class="material-symbols-outlined text-3xl text-secondary-container mb-4 block">search_insights</span>
+<h4 class="text-xl font-bold text-on-surface mb-2">SEO</h4>
+<p class="text-on-surface-variant text-sm mb-4">Data-driven visibility strategies to dominate search ecosystems.</p>
+<ul class="space-y-2 mt-auto">
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-secondary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Technical SEO Audit</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-secondary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Keyword Architecture</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-secondary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Content Strategy</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-secondary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Backlink Building</li>
+</ul>
+</div>
+<div class="glass-card shimmer-effect rounded-xl p-8 flex flex-col">
+<span class="material-symbols-outlined text-3xl text-primary-container mb-4 block">share</span>
+<h4 class="text-xl font-bold text-on-surface mb-2">Social Media</h4>
+<p class="text-on-surface-variant text-sm mb-4">Targeted brand presence across premium digital networks.</p>
+<ul class="space-y-2 mt-auto">
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-primary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Instagram &amp; LinkedIn Focus</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-primary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Content Calendar</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-primary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Paid Campaigns</li>
+<li class="flex items-center gap-2 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-primary-container" style="font-variation-settings:'FILL' 1;">check_circle</span>Analytics Dashboard</li>
+</ul>
+</div>
+<div class="glass-card shimmer-effect rounded-xl p-8 flex flex-col lg:col-span-2">
+<div class="flex items-start justify-between">
+<div class="flex-1">
+<span class="material-symbols-outlined text-3xl text-secondary-container mb-4 block">trending_up</span>
+<h4 class="text-xl font-bold text-on-surface mb-2">Lead Gen &amp; Strategy</h4>
+<p class="text-on-surface-variant text-sm max-w-md mb-6">Comprehensive business strategy and engineered funnels designed to convert high-value prospects into long-term partners.</p>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-2 bg-surface-container-high rounded-lg px-4 py-2">
+<span class="text-2xl font-bold gradient-text">3x</span>
+<span class="text-xs text-on-surface-variant">avg. lead increase</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-high rounded-lg px-4 py-2">
+<span class="text-2xl font-bold gradient-text">85%</span>
+<span class="text-xs text-on-surface-variant">funnel efficiency</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-high rounded-lg px-4 py-2">
+<span class="text-2xl font-bold gradient-text">60d</span>
+<span class="text-xs text-on-surface-variant">to first results</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-4xl text-surface-variant block mt-4 ml-4 flex-shrink-0">strategy</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full relative z-10 section-background rounded-3xl my-8" id="process">
+<div class="mb-16 text-center">
+<h2 class="font-label-uppercase text-label-uppercase text-primary-container mb-4 tracking-widest">HOW TO REACH US</h2>
+<h3 class="font-section-heading text-section-heading text-on-surface">The Growth Process</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center mb-6 text-primary-container text-2xl font-bold">1</div>
+<h4 class="text-xl font-bold text-on-surface mb-4">Connect</h4>
+<p class="text-on-surface-variant">Reach out via our social channels or email to initiate the dialogue.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center mb-6 text-secondary-container text-2xl font-bold">2</div>
+<h4 class="text-xl font-bold text-on-surface mb-4">Discovery</h4>
+<p class="text-on-surface-variant">A dedicated session to map your growth trajectory and identify key opportunities.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center mb-6 text-primary-container text-2xl font-bold">3</div>
+<h4 class="text-xl font-bold text-on-surface mb-4">Execution</h4>
+<p class="text-on-surface-variant">Implementation of scalable strategies and robust digital infrastructure.</p>
+</div>
+</div>
+<div class="text-center">
+<button onclick="openModal('contact-modal')" class="btn-primary shimmer-effect px-8 py-4 rounded-full font-label-uppercase text-label-uppercase tracking-wider">
+            Connect With Us
+        </button>
+</div>
+</section>
+<!-- Case Studies Section -->
+<section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full relative z-10 section-background rounded-3xl my-8" id="case-studies">
+<div class="mb-16">
+<h2 class="font-label-uppercase text-label-uppercase text-primary-container mb-4 tracking-widest">PROVEN RESULTS</h2>
+<h3 class="font-section-heading text-section-heading text-on-surface">Case Studies</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-card rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden">
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="E-commerce expansion — Kalki Jewels" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 font-label-uppercase text-label-uppercase text-white tracking-widest bg-black/50 px-3 py-1 rounded">Retail</div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-on-surface mb-3 group-hover:text-primary-container transition-colors">E-commerce Expansion</h4>
+<p class="text-on-surface-variant text-sm mb-4">Scaling Kalki Jewels from Etsy to a global WooCommerce store with 300% traffic growth and 5 new international markets.</p>
+<button onclick="openModal('case-ecommerce')" class="inline-flex items-center text-primary-container text-sm font-semibold hover:underline">Read Case <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span></button>
+</div>
+</div>
+<div class="glass-card rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="SaaS brand refresh — EmployHub dashboard" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 font-label-uppercase text-label-uppercase text-white tracking-widest bg-black/50 px-3 py-1 rounded">Technology</div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-on-surface mb-3 group-hover:text-primary-container transition-colors">SaaS Brand Refresh</h4>
+<p class="text-on-surface-variant text-sm mb-4">Complete UX overhaul for EmployHub — reduced onboarding from 12 steps to 4, cutting churn by 40% and unlocking seed funding.</p>
+<button onclick="openModal('case-saas')" class="inline-flex items-center text-primary-container text-sm font-semibold hover:underline">Read Case <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span></button>
+</div>
+</div>
+<div class="glass-card rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden">
+<img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=600&q=80" alt="Local to global strategy — SITARA Fabrics" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 font-label-uppercase text-label-uppercase text-white tracking-widest bg-black/50 px-3 py-1 rounded">Enterprise</div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-on-surface mb-3 group-hover:text-primary-container transition-colors">Local-to-Global Strategy</h4>
+<p class="text-on-surface-variant text-sm mb-4">SITARA Fabrics went from zero digital presence to €120K in new B2B contracts and 3 European trade fair invitations in 6 months.</p>
+<button onclick="openModal('case-global')" class="inline-flex items-center text-primary-container text-sm font-semibold hover:underline">Read Case <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Company Section -->
+<section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full relative z-10 section-background rounded-3xl my-8" id="company">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-label-uppercase text-label-uppercase text-primary-container mb-4 tracking-widest">ABOUT ELYRA</h2>
+<h3 class="font-section-heading text-section-heading text-on-surface mb-8">Bridging Technical Rigor &amp; Visionary Design</h3>
+<p class="font-body-premium text-body-premium text-on-surface-variant mb-8 text-lg">
+            At Elyra Global, our mission is to empower Small and Medium-sized Businesses (SMBs) with the digital infrastructure typically reserved for massive enterprises. We believe that exceptional design and flawless technical execution shouldn't be mutually exclusive. By uniting engineering precision with creative foresight, we construct digital platforms that not only look remarkable but drive measurable business growth.
+        </p>
+<div class="flex justify-center space-x-4 mt-12">
+<a class="social-icon" href="https://www.linkedin.com/in/elyra-global-0ab380407" target="_blank" aria-label="LinkedIn">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a class="social-icon" href="https://www.instagram.com/elyra_global?igsh=MTA0eXIycHg5aXJnbg==" target="_blank" aria-label="Instagram">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="social-icon" href="https://chat.whatsapp.com/LubrUB2ki2M0T1Tomflg5b?mode=gi_t" target="_blank" aria-label="WhatsApp">
+<i class="fab fa-whatsapp"></i>
+</a>
+<a class="social-icon" href="mailto:elyra.global.co@gmail.com" aria-label="Gmail">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full relative z-10 my-16 section-background rounded-3xl">
+<div class="glass-card rounded-2xl p-8 md:p-12 relative overflow-hidden border-primary-container/30 border">
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/10 to-secondary-container/10 pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+<!-- Left: Headline + Trust Indicators -->
+<div>
+<h2 class="font-section-heading text-section-heading text-on-surface mb-4">Ready to Grow?</h2>
+<p class="font-body-premium text-body-premium text-on-surface-variant mb-8">Let's engineer the future of your digital presence together. Drop your email and we'll be in touch within 24 hours.</p>
+<div class="flex flex-wrap gap-2">
+<span class="trust-pill"><span class="material-symbols-outlined text-sm text-primary-container" style="font-variation-settings:'FILL' 1;">schedule</span>100% Response within 24hrs</span>
+<span class="trust-pill"><span class="material-symbols-outlined text-sm text-primary-container" style="font-variation-settings:'FILL' 1;">verified</span>Free first consultation</span>
+<span class="trust-pill"><span class="material-symbols-outlined text-sm text-primary-container" style="font-variation-settings:'FILL' 1;">thumb_up</span>No commitment required</span>
+</div>
+</div>
+<!-- Right: Form -->
+<div>
+<form id="cta-form" class="flex flex-col gap-4">
+<div class="relative group">
+<input id="cta-email" class="w-full bg-surface-container-low border-b border-surface-variant border-t-0 border-x-0 px-4 py-3 text-on-surface focus:ring-0 focus:border-primary-container transition-colors placeholder:text-surface-variant focus:placeholder:text-xs focus:placeholder:uppercase focus:placeholder:text-primary-container font-body-premium text-body-premium" placeholder="Enter your email" type="email" required/>
+</div>
+<button class="btn-primary shimmer-effect px-8 py-3 rounded-full font-label-uppercase text-label-uppercase tracking-wider whitespace-nowrap w-full" type="submit">
+Connect
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Spacer to push footer down if content is short -->
+<div class="flex-grow"></div>
+<!-- Footer (From Shared Components) -->
+<footer class="w-full bg-background relative z-10 transition-colors duration-300 border-t border-transparent">
+<div class="gradient-divider"></div>
+<div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-on-surface mb-6 font-inter tracking-tight">Elyra Global</div>
+<p class="text-on-surface-variant font-inter text-xs uppercase tracking-widest leading-relaxed mb-6">
+                    Precision Engineering for Digital Excellence.
+                </p>
+<div class="text-primary-container font-inter text-xs uppercase tracking-widest">
+                    +91 78480 24531
+                </div>
+</div>
+<div class="flex flex-col space-y-4">
+<h5 class="text-on-surface font-inter text-xs uppercase tracking-widest font-semibold mb-2">Services</h5>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">Architecture</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">Strategy</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">Technical Audit</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h5 class="text-on-surface font-inter text-xs uppercase tracking-widest font-semibold mb-2">Company</h5>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">Cloud Systems</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">About Us</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">Careers</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h5 class="text-on-surface font-inter text-xs uppercase tracking-widest font-semibold mb-2">Connect</h5>
+<p class="text-on-surface-variant font-inter text-xs opacity-80">Follow us on social media</p>
+<div class="flex space-x-3">
+<a class="social-icon" href="https://www.linkedin.com/in/elyra-global-0ab380407" target="_blank" aria-label="LinkedIn">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a class="social-icon" href="https://www.instagram.com/elyra_global?igsh=MTA0eXIycHg5aXJnbg==" target="_blank" aria-label="Instagram">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="social-icon" href="https://chat.whatsapp.com/LubrUB2ki2M0T1Tomflg5b?mode=gi_t" target="_blank" aria-label="WhatsApp">
+<i class="fab fa-whatsapp"></i>
+</a>
+<a class="social-icon" href="mailto:elyra.global.co@gmail.com" aria-label="Gmail">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="gradient-divider mt-8 mb-6"></div>
+<div class="py-6 text-center">
+<span class="text-on-surface-variant font-inter text-xs uppercase tracking-widest">© 2024 Elyra Global. Precision Engineering for Digital Excellence.</span>
+</div>
+</footer>
+<script>
+// Theme Toggle Functionality
+const themeToggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+const lightIcon = document.getElementById('lightIcon');
+const darkIcon = document.getElementById('darkIcon');
+
+// Check for saved theme preference or default to dark
+const currentTheme = localStorage.getItem('theme') || 'dark';
+if (currentTheme === 'light') {
+    html.classList.add('light');
+    lightIcon.classList.add('hidden');
+    darkIcon.classList.remove('hidden');
+} else {
+    html.classList.remove('light');
+    lightIcon.classList.remove('hidden');
+    darkIcon.classList.add('hidden');
+}
+
+// Theme toggle handler
+themeToggle.addEventListener('click', () => {
+    if (html.classList.contains('light')) {
+        html.classList.remove('light');
+        localStorage.setItem('theme', 'dark');
+        lightIcon.classList.remove('hidden');
+        darkIcon.classList.add('hidden');
+    } else {
+        html.classList.add('light');
+        localStorage.setItem('theme', 'light');
+        lightIcon.classList.add('hidden');
+        darkIcon.classList.remove('hidden');
+    }
+});
+
+// Spotlight Effect - Follows Mouse
+const spotlightGlow = document.getElementById('spotlightGlow');
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+
+document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    spotlightGlow.style.left = mouseX + 'px';
+    spotlightGlow.style.top = mouseY + 'px';
+});
+
+// Reset spotlight to center when mouse leaves window
+document.addEventListener('mouseleave', () => {
+    mouseX = window.innerWidth / 2;
+    mouseY = window.innerHeight / 2;
+    spotlightGlow.style.left = mouseX + 'px';
+    spotlightGlow.style.top = mouseY + 'px';
+});
+
+// ===== MODAL SYSTEM =====
+function openModal(id) {
+    const overlay = document.getElementById(id);
+    if (!overlay) return;
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(id) {
+    const overlay = document.getElementById(id);
+    if (!overlay) return;
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Close modal on overlay (background) click
+document.addEventListener('click', function(e) {
+    const modals = document.querySelectorAll('.modal-overlay, .case-modal-overlay');
+    modals.forEach(function(modal) {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+});
+
+// Close modal on Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.active, .case-modal-overlay.active').forEach(function(modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+});
+
+// ===== CTA FORM HANDLER =====
+const ctaForm = document.getElementById('cta-form');
+if (ctaForm) {
+    ctaForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const emailInput = document.getElementById('cta-email');
+        const email = emailInput ? emailInput.value.trim() : '';
+        const subject = encodeURIComponent('Inquiry from ' + (email || 'website visitor'));
+        const body = encodeURIComponent(
+            'Hello Elyra Global,\n\nI found your website and would like to discuss a project.\n\nMy email: ' + email + '\n\nBest regards'
+        );
+        window.location.href = 'mailto:elyra.global.co@gmail.com?subject=' + subject + '&body=' + body;
+    });
+}
+
+// ===== SCROLL-BASED NAV HIGHLIGHT =====
+(function() {
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    const sections = Array.from(navLinks).map(function(link) {
+        return document.querySelector(link.getAttribute('href'));
+    }).filter(Boolean);
+
+    function updateNavHighlight() {
+        const scrollY = window.scrollY + 100;
+        let current = null;
+        sections.forEach(function(section) {
+            if (section.offsetTop <= scrollY) current = section;
+        });
+        navLinks.forEach(function(link) {
+            const target = document.querySelector(link.getAttribute('href'));
+            if (target === current) {
+                link.classList.add('text-primary-container', 'border-b', 'border-primary-container');
+                link.classList.remove('text-on-surface-variant');
+            } else {
+                link.classList.remove('text-primary-container', 'border-b', 'border-primary-container');
+                link.classList.add('text-on-surface-variant');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateNavHighlight, { passive: true });
+    updateNavHighlight();
+})();
+</script>
+
+<!-- ===== CONTACT MODAL ===== -->
+<div id="contact-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('contact-modal')" aria-label="Close">&times;</button>
+        <h2 id="contact-modal-title" class="text-2xl font-bold text-on-surface mb-2">Let's Build Something Great</h2>
+        <p class="text-on-surface-variant text-sm mb-8">Choose your preferred way to connect and let's start your growth journey.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="https://www.linkedin.com/in/elyra-global-0ab380407" target="_blank" class="platform-card linkedin">
+                <div class="platform-icon" style="background:rgba(10,102,194,0.15);color:#0A66C2;">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div>
+                    <div class="font-semibold text-sm">LinkedIn</div>
+                    <div class="text-xs text-on-surface-variant mt-0.5">Professional Inquiry</div>
+                </div>
+                <span class="material-symbols-outlined text-sm text-on-surface-variant ml-auto">arrow_forward</span>
+            </a>
+            <a href="https://chat.whatsapp.com/LubrUB2ki2M0T1Tomflg5b?mode=gi_t" target="_blank" class="platform-card whatsapp">
+                <div class="platform-icon" style="background:rgba(37,211,102,0.15);color:#25D366;">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div>
+                    <div class="font-semibold text-sm">WhatsApp</div>
+                    <div class="text-xs text-on-surface-variant mt-0.5">Quick Chat</div>
+                </div>
+                <span class="material-symbols-outlined text-sm text-on-surface-variant ml-auto">arrow_forward</span>
+            </a>
+            <a href="https://www.instagram.com/elyra_global?igsh=MTA0eXIycHg5aXJnbg==" target="_blank" class="platform-card instagram">
+                <div class="platform-icon" style="background:linear-gradient(135deg,rgba(193,53,132,0.15),rgba(253,29,29,0.1));color:#C13584;">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div>
+                    <div class="font-semibold text-sm">Instagram</div>
+                    <div class="text-xs text-on-surface-variant mt-0.5">Creative Collaboration</div>
+                </div>
+                <span class="material-symbols-outlined text-sm text-on-surface-variant ml-auto">arrow_forward</span>
+            </a>
+            <a href="mailto:elyra.global.co@gmail.com" class="platform-card gmail">
+                <div class="platform-icon" style="background:rgba(234,67,53,0.15);color:#EA4335;">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                    <div class="font-semibold text-sm">Gmail</div>
+                    <div class="text-xs text-on-surface-variant mt-0.5">Detailed Proposal</div>
+                </div>
+                <span class="material-symbols-outlined text-sm text-on-surface-variant ml-auto">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ===== CASE STUDY MODAL: E-commerce ===== -->
+<div id="case-ecommerce" class="case-modal-overlay" role="dialog" aria-modal="true">
+    <div class="case-modal-box">
+        <img class="case-modal-header-img" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=80" alt="Kalki Jewels e-commerce store"/>
+        <button class="modal-close" onclick="closeModal('case-ecommerce')" aria-label="Close">&times;</button>
+        <div class="case-modal-body">
+            <div class="flex items-center gap-2 mb-2">
+                <span class="font-label-uppercase text-label-uppercase text-primary-container tracking-widest">RETAIL</span>
+                <span class="text-on-surface-variant text-xs">· Artisan Jewelry, Mumbai</span>
+            </div>
+            <h2 class="text-2xl font-bold text-on-surface mb-4">E-commerce Expansion<br/><span class="gradient-text">Kalki Jewels</span></h2>
+            <div class="mb-5">
+                <h3 class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mb-2">The Challenge</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">Local artisan brand stuck on Etsy, losing 60% of margin to platform fees, with no ability to control customer experience or scale internationally.</p>
+            </div>
+            <div class="mb-5">
+                <h3 class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mb-2">Elyra's Approach</h3>
+                <ul class="space-y-1.5 text-sm text-on-surface-variant">
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-primary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>Custom WooCommerce storefront built for global scaling</li>
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-primary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>Razorpay + Stripe dual-gateway payment integration</li>
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-primary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>Schema markup for product-level SEO + Google Shopping ads</li>
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-primary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>Speed optimization achieving LCP &lt; 2s</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mb-3">Results</h3>
+                <div class="flex flex-wrap">
+                    <span class="result-pill">300% traffic increase in 4 months</span>
+                    <span class="result-pill">180% revenue growth</span>
+                    <span class="result-pill">5 new international markets</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== CASE STUDY MODAL: SaaS ===== -->
+<div id="case-saas" class="case-modal-overlay" role="dialog" aria-modal="true">
+    <div class="case-modal-box">
+        <img class="case-modal-header-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80" alt="EmployHub SaaS dashboard redesign"/>
+        <button class="modal-close" onclick="closeModal('case-saas')" aria-label="Close">&times;</button>
+        <div class="case-modal-body">
+            <div class="flex items-center gap-2 mb-2">
+                <span class="font-label-uppercase text-label-uppercase text-secondary-container tracking-widest">TECHNOLOGY</span>
+                <span class="text-on-surface-variant text-xs">· B2B HR SaaS</span>
+            </div>
+            <h2 class="text-2xl font-bold text-on-surface mb-4">SaaS Brand Refresh<br/><span class="gradient-text">EmployHub</span></h2>
+            <div class="mb-5">
+                <h3 class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mb-2">The Challenge</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">Outdated UI was causing high trial churn — 65% of users dropped off during onboarding across 12 confusing steps. Investor confidence was deteriorating.</p>
+            </div>
+            <div class="mb-5">
+                <h3 class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mb-2">Elyra's Approach</h3>
+                <ul class="space-y-1.5 text-sm text-on-surface-variant">
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-secondary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>Full UX audit using heatmaps &amp; session recordings</li>
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-secondary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>New design system built entirely in Figma</li>
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-secondary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>Redesigned onboarding flow: 12 steps reduced to 4</li>
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-secondary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>Production-ready component library for dev handoff</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mb-3">Results</h3>
+                <div class="flex flex-wrap">
+                    <span class="result-pill">40% churn reduction</span>
+                    <span class="result-pill">25% trial-to-paid improvement</span>
+                    <span class="result-pill">Seed round raised post-redesign</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== CASE STUDY MODAL: Local-to-Global ===== -->
+<div id="case-global" class="case-modal-overlay" role="dialog" aria-modal="true">
+    <div class="case-modal-box">
+        <img class="case-modal-header-img" src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=700&q=80" alt="SITARA Fabrics global strategy"/>
+        <button class="modal-close" onclick="closeModal('case-global')" aria-label="Close">&times;</button>
+        <div class="case-modal-body">
+            <div class="flex items-center gap-2 mb-2">
+                <span class="font-label-uppercase text-label-uppercase text-primary-container tracking-widest">ENTERPRISE</span>
+                <span class="text-on-surface-variant text-xs">· B2B Textile Manufacturing, Bangalore</span>
+            </div>
+            <h2 class="text-2xl font-bold text-on-surface mb-4">Local-to-Global Strategy<br/><span class="gradient-text">SITARA Fabrics</span></h2>
+            <div class="mb-5">
+                <h3 class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mb-2">The Challenge</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">Excellent product quality with zero digital presence. International buyers were choosing competitors simply because SITARA could not be found or trusted online.</p>
+            </div>
+            <div class="mb-5">
+                <h3 class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mb-2">Elyra's Approach</h3>
+                <ul class="space-y-1.5 text-sm text-on-surface-variant">
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-primary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>International SEO with hreflang tags for EN &amp; DE markets</li>
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-primary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>LinkedIn B2B organic strategy targeting international buyer personas</li>
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-primary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>WhatsApp Business catalog for direct B2B product discovery</li>
+                    <li class="flex gap-2"><span class="material-symbols-outlined text-sm text-primary-container mt-0.5" style="font-variation-settings:'FILL' 1;">check_circle</span>Multilingual landing pages in English + German</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mb-3">Results</h3>
+                <div class="flex flex-wrap">
+                    <span class="result-pill">5 new international clients in 6 months</span>
+                    <span class="result-pill">€120K in new B2B contracts</span>
+                    <span class="result-pill">3 European trade fair invitations</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body></html>

@@ -1,0 +1,97 @@
+/* ============================================
+   SECTION STYLES
+   ============================================
+   Hero, Services, Process, Case Studies, etc.
+   ============================================ */
+
+/* SECTION BACKGROUND */
+.section-background {
+    position: relative;
+    background: linear-gradient(135deg,
+        rgba(0, 212, 255, 0.02) 0%,
+        rgba(106, 23, 173, 0.02) 100%);
+}
+
+html.light .section-background {
+    background: linear-gradient(135deg,
+        rgba(0, 129, 161, 0.015) 0%,
+        rgba(106, 23, 173, 0.015) 100%);
+}
+
+/* HERO SECTION */
+.hero-background {
+    background: linear-gradient(180deg,
+        rgba(0, 212, 255, 0.08) 0%,
+        rgba(18, 20, 21, 0) 50%,
+        rgba(106, 23, 173, 0.05) 100%);
+}
+
+html.light .hero-background {
+    background: linear-gradient(180deg,
+        rgba(0, 129, 161, 0.06) 0%,
+        rgba(247, 241, 250, 0) 50%,
+        rgba(106, 23, 173, 0.04) 100%);
+}
+
+/* GRID PATTERN */
+.grid-pattern {
+    background-image:
+        linear-gradient(to right, rgba(39, 39, 42, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(39, 39, 42, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    transition: background-image 0.3s ease;
+}
+
+html.light .grid-pattern {
+    background-image:
+        linear-gradient(to right, rgba(28, 27, 31, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(28, 27, 31, 0.08) 1px, transparent 1px);
+}
+
+/* DOT MATRIX */
+.dot-matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    animation: move-dots 60s linear infinite;
+}
+
+html.light .dot-matrix {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+}
+
+/* ANIMATED LINES */
+.animated-line {
+    position: absolute;
+    width: 1px;
+    height: 100vh;
+    background: linear-gradient(to bottom, transparent, rgba(0, 212, 255, 0.3), transparent);
+    animation: move-line 8s infinite linear;
+    opacity: 0;
+}
+
+html.light .animated-line {
+    background: linear-gradient(to bottom, transparent, rgba(0, 129, 161, 0.2), transparent);
+}
+
+/* GRADIENT DIVIDER */
+.gradient-divider {
+    height: 1px;
+    background: linear-gradient(to right,
+        transparent,
+        rgba(0, 212, 255, 0.3),
+        transparent);
+}
+
+html.light .gradient-divider {
+    background: linear-gradient(to right,
+        transparent,
+        rgba(0, 129, 161, 0.2),
+        transparent);
+}

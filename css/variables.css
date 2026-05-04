@@ -1,0 +1,118 @@
+/* ============================================
+   DESIGN SYSTEM - CSS VARIABLES
+   ============================================
+   All color, spacing, and typography variables
+   Update here to change across the entire site
+   ============================================ */
+
+/* DARK MODE (Default) */
+html {
+    color-scheme: dark;
+    --color-surface-bright: 56 57 58;
+    --color-tertiary: 225 222 225;
+    --color-on-tertiary-container: 81 80 82;
+    --color-on-secondary-fixed: 44 0 80;
+    --color-surface: 18 20 21;
+    --color-primary-fixed: 180 235 255;
+    --color-on-primary-container: 0 88 107;
+    --color-inverse-surface: 226 226 227;
+    --color-on-primary-fixed: 0 31 39;
+    --color-primary-fixed-dim: 60 215 255;
+    --color-on-tertiary-fixed: 28 27 29;
+    --color-surface-tint: 60 215 255;
+    --color-error: 255 180 171;
+    --color-tertiary-container: 197 194 197;
+    --color-secondary-container: 106 23 173;
+    --color-on-background: 226 226 227;
+    --color-background: 18 20 21;
+    --color-tertiary-fixed-dim: 200 198 200;
+    --color-on-secondary-container: 212 165 255;
+    --color-surface-container-low: 26 28 29;
+    --color-inverse-primary: 0 103 126;
+    --color-on-primary: 0 54 66;
+    --color-secondary: 222 183 255;
+    --color-surface-container-lowest: 12 14 15;
+    --color-on-surface-variant: 187 201 207;
+    --color-error-container: 147 0 10;
+    --color-on-tertiary: 49 48 50;
+    --color-primary-container: 0 212 255;
+    --color-on-surface: 226 226 227;
+    --color-on-error-container: 255 218 214;
+    --color-secondary-fixed: 240 219 255;
+    --color-surface-container-high: 40 42 43;
+    --color-primary: 168 232 255;
+    --color-on-secondary: 74 0 127;
+    --color-on-error: 105 0 5;
+    --color-outline: 133 147 152;
+    --color-on-primary-fixed-variant: 0 78 95;
+    --color-surface-container-highest: 51 53 54;
+    --color-on-secondary-fixed-variant: 103 18 170;
+    --color-secondary-fixed-dim: 222 183 255;
+    --color-on-tertiary-fixed-variant: 71 70 73;
+    --color-outline-variant: 60 73 78;
+    --color-surface-variant: 51 53 54;
+    --color-surface-container: 30 32 33;
+    --color-inverse-on-surface: 47 49 50;
+    --color-surface-dim: 18 20 21;
+    --color-tertiary-fixed: 229 225 228;
+
+    /* Accent Colors */
+    --accent-cyan: #00d4ff;
+    --accent-violet: #6a17ad;
+}
+
+/* LIGHT MODE */
+html.light {
+    color-scheme: light;
+    --color-surface-bright: 240 235 245;
+    --color-tertiary: 28 27 29;
+    --color-on-tertiary-container: 174 172 176;
+    --color-on-secondary-fixed: 240 219 255;
+    --color-surface: 248 242 252;
+    --color-primary-fixed: 0 31 39;
+    --color-on-primary-container: 179 231 255;
+    --color-inverse-surface: 28 27 31;
+    --color-on-primary-fixed: 180 235 255;
+    --color-primary-fixed-dim: 0 106 122;
+    --color-on-tertiary-fixed: 229 225 228;
+    --color-surface-tint: 0 129 161;
+    --color-error: 179 38 30;
+    --color-tertiary-container: 71 63 81;
+    --color-secondary-container: 212 165 255;
+    --color-on-background: 28 27 31;
+    --color-background: 247 241 250;
+    --color-tertiary-fixed-dim: 221 213 224;
+    --color-on-secondary-container: 44 0 80;
+    --color-surface-container-low: 243 233 245;
+    --color-inverse-primary: 60 215 255;
+    --color-on-primary: 255 255 255;
+    --color-secondary: 106 23 173;
+    --color-surface-container-lowest: 252 248 254;
+    --color-on-surface-variant: 73 69 79;
+    --color-error-container: 249 222 220;
+    --color-on-tertiary: 229 225 228;
+    --color-primary-container: 0 106 122;
+    --color-on-surface: 28 27 31;
+    --color-on-error-container: 65 14 11;
+    --color-secondary-fixed: 44 0 80;
+    --color-surface-container-high: 238 225 242;
+    --color-primary: 0 129 161;
+    --color-on-secondary: 255 255 255;
+    --color-on-error: 255 255 255;
+    --color-outline: 121 116 126;
+    --color-on-primary-fixed-variant: 0 61 77;
+    --color-surface-container-highest: 232 226 238;
+    --color-on-secondary-fixed-variant: 103 18 170;
+    --color-secondary-fixed-dim: 197 168 255;
+    --color-on-tertiary-fixed-variant: 74 74 82;
+    --color-outline-variant: 202 199 208;
+    --color-surface-variant: 237 225 236;
+    --color-surface-container: 243 237 247;
+    --color-inverse-on-surface: 245 239 247;
+    --color-surface-dim: 243 237 247;
+    --color-tertiary-fixed: 28 27 29;
+
+    /* Accent Colors */
+    --accent-cyan: #0081a1;
+    --accent-violet: #6a17ad;
+}

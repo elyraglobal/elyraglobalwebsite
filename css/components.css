@@ -1,0 +1,162 @@
+/* ============================================
+   REUSABLE COMPONENTS
+   ============================================
+   Buttons, Cards, Social Icons, Forms
+   ============================================ */
+
+/* PRIMARY BUTTON */
+.btn-primary {
+    background: linear-gradient(to right, var(--accent-cyan), var(--accent-violet));
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+    transform: scale(1.02);
+}
+
+html.light .btn-primary {
+    background: linear-gradient(to right, #0081a1, #6a17ad);
+}
+
+html.light .btn-primary:hover {
+    box-shadow: 0 0 15px rgba(0, 129, 161, 0.3);
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+    border: 1px solid #27272a;
+    color: #e2e2e3;
+    transition: all 0.3s ease;
+}
+
+html.light .btn-secondary {
+    border: 1px solid #cac7d0;
+    color: #1c1b1f;
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+html.light .btn-secondary:hover {
+    border-color: #0081a1;
+    color: #0081a1;
+}
+
+/* GLASS CARD */
+.glass-card {
+    background: rgba(39, 39, 42, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid #27272a;
+    transition: all 0.4s ease;
+}
+
+html.light .glass-card {
+    background: rgba(28, 27, 31, 0.06);
+    border: 1px solid #cac7d0;
+}
+
+.glass-card:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(106, 23, 173, 0.1));
+    border-top-color: var(--accent-cyan);
+    box-shadow: 0 10px 30px -10px rgba(0, 212, 255, 0.15);
+}
+
+html.light .glass-card:hover {
+    background: linear-gradient(135deg, rgba(0, 129, 161, 0.08), rgba(106, 23, 173, 0.08));
+    border-top-color: #0081a1;
+    box-shadow: 0 10px 30px -10px rgba(0, 129, 161, 0.12);
+}
+
+/* SOCIAL ICON */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--accent-cyan);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    transition: all 0.3s ease;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: rgba(0, 212, 255, 0.2);
+    border-color: rgba(0, 212, 255, 0.6);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.2);
+}
+
+html.light .social-icon {
+    background: rgba(0, 129, 161, 0.1);
+    color: #0081a1;
+    border: 1px solid rgba(0, 129, 161, 0.3);
+}
+
+html.light .social-icon:hover {
+    background: rgba(0, 129, 161, 0.2);
+    border-color: rgba(0, 129, 161, 0.6);
+    box-shadow: 0 8px 20px rgba(0, 129, 161, 0.15);
+}
+
+/* SHIMMER EFFECT */
+.shimmer-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.shimmer-effect::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+html.light .shimmer-effect::after {
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.03), transparent);
+}
+
+.shimmer-effect:hover::after {
+    opacity: 1;
+    left: 100%;
+}
+
+/* GRADIENT TEXT */
+.gradient-text {
+    background: linear-gradient(to right, var(--accent-cyan), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+html.light .gradient-text {
+    background: linear-gradient(to right, #0081a1, #6a17ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* INPUT FIELD */
+input {
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--accent-cyan) !important;
+    outline: none;
+}

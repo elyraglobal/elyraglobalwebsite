@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title - Elyra Global</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap">
+
+    <!-- CSS Modules from Parent -->
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="../../css/sections.css">
+
+    <!-- Project-Specific Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            background-color: rgb(var(--color-background));
+            color: rgb(var(--color-on-background));
+        }
+    </style>
+</head>
+<body>
+
+<div class="spotlight">
+    <div class="spotlight-glow" id="spotlightGlow"></div>
+</div>
+
+<!-- ============================================
+     NAVIGATION
+     ============================================ -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-surface-variant/50">
+    <div class="flex justify-between items-center h-20 px-8 max-w-[1440px] mx-auto w-full">
+        <a href="../../index-new.html" class="text-2xl font-black gradient-text">Elyra Global</a>
+        <a href="../../index-new.html" class="btn-secondary px-6 py-2 rounded-full font-label-uppercase text-label-uppercase">
+            Back to Home
+        </a>
+    </div>
+</nav>
+
+<!-- ============================================
+     PROJECT HERO
+     ============================================ -->
+<section class="relative min-h-screen flex items-center justify-center pt-32 pb-16 px-4 hero-background">
+    <div class="max-w-[1440px] mx-auto w-full text-center z-10">
+        <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full border border-surface-variant bg-surface-container-low/50 mb-8">
+            <span class="font-label-uppercase text-label-uppercase text-primary-container">Project Category</span>
+        </div>
+        <h1 class="font-hero-heading text-hero-heading text-on-surface max-w-4xl mx-auto mb-8">
+            Your Project Title Here
+        </h1>
+        <p class="font-body-premium text-body-premium text-on-surface-variant max-w-2xl mx-auto mb-12 text-lg">
+            Brief description of the project, what problem it solved, and the impact.
+        </p>
+    </div>
+</section>
+
+<!-- ============================================
+     PROJECT OVERVIEW
+     ============================================ -->
+<section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full section-background rounded-3xl my-8">
+    <div class="mb-16">
+        <h2 class="font-label-uppercase text-label-uppercase text-primary-container mb-4 tracking-widest">PROJECT OVERVIEW</h2>
+        <h3 class="font-section-heading text-section-heading text-on-surface">The Challenge & Solution</h3>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+            <h4 class="text-xl font-bold text-on-surface mb-4">The Challenge</h4>
+            <p class="text-on-surface-variant leading-relaxed">
+                Describe the problem or challenge the client was facing.
+            </p>
+        </div>
+        <div>
+            <h4 class="text-xl font-bold text-on-surface mb-4">Our Solution</h4>
+            <p class="text-on-surface-variant leading-relaxed">
+                Explain how you solved it and what approach you took.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     PROJECT GALLERY
+     ============================================ -->
+<section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full">
+    <div class="mb-16">
+        <h2 class="font-label-uppercase text-label-uppercase text-primary-container mb-4 tracking-widest">PROJECT SHOWCASE</h2>
+        <h3 class="font-section-heading text-section-heading text-on-surface">Design & Development</h3>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Replace with actual project images -->
+        <div class="glass-card rounded-xl overflow-hidden h-96">
+            <img src="images/screenshot-1.jpg" alt="Project Screenshot" class="w-full h-full object-cover">
+        </div>
+        <div class="glass-card rounded-xl overflow-hidden h-96">
+            <img src="images/screenshot-2.jpg" alt="Project Screenshot" class="w-full h-full object-cover">
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     PROJECT RESULTS
+     ============================================ -->
+<section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full section-background rounded-3xl my-8">
+    <div class="mb-16 text-center">
+        <h2 class="font-label-uppercase text-label-uppercase text-primary-container mb-4 tracking-widest">RESULTS & IMPACT</h2>
+        <h3 class="font-section-heading text-section-heading text-on-surface">Measurable Outcomes</h3>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+            <div class="text-4xl font-bold text-primary-container mb-2">300%</div>
+            <p class="text-on-surface-variant">Traffic Increase</p>
+        </div>
+        <div class="text-center">
+            <div class="text-4xl font-bold text-primary-container mb-2">40%</div>
+            <p class="text-on-surface-variant">Conversion Boost</p>
+        </div>
+        <div class="text-center">
+            <div class="text-4xl font-bold text-primary-container mb-2">2 Months</div>
+            <p class="text-on-surface-variant">Deployment Time</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     TECHNOLOGIES USED
+     ============================================ -->
+<section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full">
+    <div class="mb-16 text-center">
+        <h2 class="font-label-uppercase text-label-uppercase text-primary-container mb-4 tracking-widest">TECH STACK</h2>
+        <h3 class="font-section-heading text-section-heading text-on-surface">Technologies & Tools</h3>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+        <div class="glass-card rounded-xl p-6 text-center">
+            <p class="text-on-surface font-semibold">React.js</p>
+        </div>
+        <div class="glass-card rounded-xl p-6 text-center">
+            <p class="text-on-surface font-semibold">Node.js</p>
+        </div>
+        <div class="glass-card rounded-xl p-6 text-center">
+            <p class="text-on-surface font-semibold">Tailwind CSS</p>
+        </div>
+        <div class="glass-card rounded-xl p-6 text-center">
+            <p class="text-on-surface font-semibold">PostgreSQL</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     CTA SECTION
+     ============================================ -->
+<section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full my-16 section-background rounded-3xl">
+    <div class="glass-card rounded-2xl p-12 text-center">
+        <h2 class="font-section-heading text-section-heading text-on-surface mb-6">Ready for Your Next Project?</h2>
+        <p class="font-body-premium text-body-premium text-on-surface-variant mb-10 max-w-xl mx-auto">
+            Let's build something extraordinary together. Reach out to discuss your vision.
+        </p>
+        <button class="btn-primary shimmer-effect px-8 py-3 rounded-full font-label-uppercase text-label-uppercase tracking-wider">
+            Start Your Project
+        </button>
+    </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="w-full bg-background relative z-10 border-t border-transparent mt-20">
+    <div class="gradient-divider"></div>
+    <div class="max-w-7xl mx-auto px-8 py-16 text-center">
+        <p class="text-on-surface-variant font-inter text-xs uppercase tracking-widest">
+            © 2024 Elyra Global. Precision Engineering for Digital Excellence.
+        </p>
+        <a href="../../index-new.html" class="text-primary-container font-semibold mt-6 inline-block">
+            ← Back to Portfolio
+        </a>
+    </div>
+</footer>
+
+<!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+<script src="../../js/theme.js"></script>
+<script src="../../js/spotlight.js"></script>
+
+</body>
+</html>

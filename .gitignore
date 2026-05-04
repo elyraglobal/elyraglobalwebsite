@@ -1,0 +1,58 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# API Keys & Credentials
+credentials.json
+token.json
+*.key
+*.pem
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+.code-workspace
+
+# Node & Dependencies (if you add them later)
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log
+.npm
+
+# Python (if you add Python tools)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Build & Temp Files
+.tmp/
+dist/
+build/
+*.log
+.cache/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Miscellaneous
+*.bak
+*.temp
+.DS_Store

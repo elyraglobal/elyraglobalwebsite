@@ -93,6 +93,36 @@ http://localhost:3000/index-new.html
 
 ---
 
+## 📋 Workflow: Local Testing Before Push
+
+### ⚠️ IMPORTANT RULE: ALWAYS TEST LOCALLY FIRST
+
+**Never push directly to GitHub without testing on localhost!**
+
+### Workflow:
+1. **Make changes** to HTML/CSS/JS files
+2. **Test on localhost** (http://localhost:8000)
+   - Verify the change looks correct
+   - Test on mobile (use DevTools)
+   - Test both dark & light themes
+   - Check all affected sections
+3. **Ask before pushing** — Get confirmation that changes are good
+4. **git add → git commit → git push** — Only after approval
+5. ✅ Changes go live automatically
+
+### Example:
+```bash
+# 1. Edit a file (e.g., change button color in css/variables.css)
+# 2. Refresh http://localhost:8000
+# 3. Verify it looks good
+# 4. "Ready to push?" → "Yes, looks good!"
+# 5. git add . && git commit -m "Change button color" && git push
+```
+
+**Rule:** I will ALWAYS ask you before pushing to ensure you've reviewed and approved the changes.
+
+---
+
 ## 🎨 Making Changes
 
 ### Change Brand Colors

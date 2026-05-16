@@ -47,6 +47,10 @@ dist/
 build/
 *.log
 .cache/
+.vite/
+
+# Old/backup files
+index-old.html
 
 # Testing
 coverage/

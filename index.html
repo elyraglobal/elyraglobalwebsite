@@ -2,8 +2,25 @@
 
 <html lang="en"><head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+<meta name="description" content="Elyra Global builds high-end websites, runs digital marketing, and drives growth for businesses. Precision engineering meets creative design."/>
+<meta name="keywords" content="web design, digital marketing, SEO, web development, elyra global, India"/>
+<meta property="og:title" content="Elyra Global — Precision Engineering for Digital Excellence"/>
+<meta property="og:description" content="We build what your business deserves. High-end websites, SEO, social media, and lead generation for modern businesses."/>
+<meta property="og:image" content="assets/brand/elyra_logo_full.png"/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Elyra Global — Precision Engineering for Digital Excellence"/>
+<meta name="twitter:description" content="We build what your business deserves. High-end websites, SEO, social media, and lead generation for modern businesses."/>
+<link rel="icon" type="image/png" href="assets/brand/elyra_logo_square.png"/>
 <title>Elyra Global - Precision Engineering for Digital Excellence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com"/>
+<link rel="preconnect" href="https://cdn.tailwindcss.com"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -730,6 +747,57 @@
     </style>
 </head>
 <body class="font-body-premium text-body-premium antialiased relative min-h-screen flex flex-col bg-background text-on-background transition-colors duration-300">
+<!-- Sticky Predictor CTA -->
+<a href="predictor/index.html" id="sticky-predictor-cta">
+    <span style="font-size:18px;">🎓</span>
+    <span>Passed 12th? Click here</span>
+    <span style="font-size:16px;">→</span>
+</a>
+<style>
+#sticky-predictor-cta {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #00d4ff, #6a17ad);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    box-shadow: 0 8px 32px rgba(0,212,255,0.35);
+    animation: ctaPulse 2.5s ease-in-out infinite;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    white-space: nowrap;
+}
+#sticky-predictor-cta:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 40px rgba(0,212,255,0.55);
+}
+@media (max-width: 640px) {
+    #sticky-predictor-cta {
+        bottom: 16px;
+        right: 50%;
+        transform: translateX(50%);
+        font-size: 12px;
+        padding: 12px 18px;
+        gap: 8px;
+    }
+    #sticky-predictor-cta:hover {
+        transform: translateX(50%) scale(1.04);
+    }
+}
+@keyframes ctaPulse {
+    0%, 100% { box-shadow: 0 8px 32px rgba(0,212,255,0.35); }
+    50%       { box-shadow: 0 8px 48px rgba(106,23,173,0.55); }
+}
+</style>
+
 <!-- Spotlight Effect -->
 <div class="spotlight">
     <div class="spotlight-glow" id="spotlightGlow"></div>
@@ -751,6 +819,9 @@
 <a class="text-on-surface-variant hover:text-on-surface transition-all duration-300 scale-95 active:scale-90" href="#process">Process</a>
 <a class="text-on-surface-variant hover:text-on-surface transition-all duration-300 scale-95 active:scale-90" href="#case-studies">Case Studies</a>
 <a class="text-on-surface-variant hover:text-on-surface transition-all duration-300 scale-95 active:scale-90" href="#company">Company</a>
+<a class="text-on-surface-variant hover:text-primary-container transition-all duration-300 scale-95 active:scale-90 flex items-center gap-1" href="predictor/index.html">
+  <span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>Predictor
+</a>
 </div>
 <div class="flex items-center space-x-6">
 <button aria-label="Toggle Dark/Light Mode" id="themeToggle" class="theme-toggle text-on-surface-variant hover:text-primary-container transition-colors">
@@ -920,7 +991,7 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="glass-card rounded-xl overflow-hidden group">
 <div class="h-48 relative overflow-hidden">
-<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="E-commerce expansion — Kalki Jewels" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="E-commerce expansion — Kalki Jewels" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
 <div class="absolute bottom-4 left-4 font-label-uppercase text-label-uppercase text-white tracking-widest bg-black/50 px-3 py-1 rounded">Retail</div>
 </div>
@@ -932,7 +1003,7 @@
 </div>
 <div class="glass-card rounded-xl overflow-hidden group">
 <div class="h-48 relative overflow-hidden">
-<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="SaaS brand refresh — EmployHub dashboard" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="SaaS brand refresh — EmployHub dashboard" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
 <div class="absolute bottom-4 left-4 font-label-uppercase text-label-uppercase text-white tracking-widest bg-black/50 px-3 py-1 rounded">Technology</div>
 </div>
@@ -944,7 +1015,7 @@
 </div>
 <div class="glass-card rounded-xl overflow-hidden group">
 <div class="h-48 relative overflow-hidden">
-<img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=600&q=80" alt="Local to global strategy — SITARA Fabrics" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+<img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=600&q=80" alt="Local to global strategy — SITARA Fabrics" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
 <div class="absolute bottom-4 left-4 font-label-uppercase text-label-uppercase text-white tracking-widest bg-black/50 px-3 py-1 rounded">Enterprise</div>
 </div>
@@ -956,6 +1027,71 @@
 </div>
 </div>
 </section>
+<!-- PMSSS Predictor Section -->
+<section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full relative z-10 section-background rounded-3xl my-8" id="predictor">
+<div class="glass-card rounded-2xl p-8 md:p-12 relative overflow-hidden border-primary-container/20 border">
+  <div class="absolute inset-0 bg-gradient-to-br from-primary-container/8 to-secondary-container/8 pointer-events-none"></div>
+  <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <!-- Left -->
+    <div>
+      <div class="mb-5 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary-container/30 bg-primary-container/10 backdrop-blur-md">
+        <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+        <span class="font-label-uppercase text-label-uppercase text-primary-container">FREE TOOL · PMSSS</span>
+      </div>
+      <h2 class="font-section-heading text-section-heading text-on-surface mb-4 leading-tight">
+        PMSSS College<br/><span class="gradient-text">Predictor</span>
+      </h2>
+      <p class="font-body-premium text-body-premium text-on-surface-variant mb-6">
+        Built on real allotment data from the latest PMSSS records. Enter your rank and get a personalised list of colleges you can actually get — in under 30 seconds.
+      </p>
+      <div class="flex flex-col gap-3 mb-8">
+        <div class="flex items-center gap-3 text-sm text-on-surface-variant">
+          <span class="material-symbols-outlined text-primary-container text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>
+          3 years of real PMSSS allotment data
+        </div>
+        <div class="flex items-center gap-3 text-sm text-on-surface-variant">
+          <span class="material-symbols-outlined text-primary-container text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>
+          OTP-verified · 100% free access
+        </div>
+        <div class="flex items-center gap-3 text-sm text-on-surface-variant">
+          <span class="material-symbols-outlined text-primary-container text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>
+          Instant results — no waiting
+        </div>
+      </div>
+      <a href="predictor/index.html" class="btn-primary shimmer-effect inline-flex items-center gap-2 px-8 py-4 rounded-full font-label-uppercase text-label-uppercase tracking-wider">
+        Try the Free Predictor
+        <span class="material-symbols-outlined text-base">arrow_forward</span>
+      </a>
+    </div>
+    <!-- Right: decorative card mockup (hidden on mobile to keep layout clean) -->
+    <div class="hidden md:flex flex-col gap-4">
+      <div class="glass-card rounded-xl p-5 border border-primary-container/20">
+        <div class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Your Predicted Rank Range</div>
+        <div class="text-4xl font-black gradient-text mb-1">1,200 – 1,800</div>
+        <div class="text-xs text-on-surface-variant">Based on General · PCM · J&K</div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="glass-card rounded-xl p-5 text-center border border-primary-container/20">
+          <div class="text-2xl font-bold gradient-text">12+</div>
+          <div class="text-xs text-on-surface-variant mt-1">Colleges matched</div>
+        </div>
+        <div class="glass-card rounded-xl p-5 text-center border border-secondary-container/20">
+          <div class="text-2xl font-bold" style="background:linear-gradient(to right,#a855f7,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">30s</div>
+          <div class="text-xs text-on-surface-variant mt-1">Instant result</div>
+        </div>
+      </div>
+      <div class="glass-card rounded-xl p-5 border border-surface-variant">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="material-symbols-outlined text-primary-container text-sm" style="font-variation-settings:'FILL' 1;">verified</span>
+          <span class="text-xs text-on-surface-variant uppercase tracking-widest">Top Match</span>
+        </div>
+        <div class="text-sm font-semibold text-on-surface">NIT Srinagar · B.Tech CSE</div>
+        <div class="text-xs text-on-surface-variant mt-1">Latest closing rank: 1,650 · High probability</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 <!-- Company Section -->
 <section class="py-xl px-4 sm:px-8 max-w-[1440px] mx-auto w-full relative z-10 section-background rounded-3xl my-8" id="company">
 <div class="max-w-4xl mx-auto text-center">
@@ -965,13 +1101,13 @@
             At Elyra Global, our mission is to empower Small and Medium-sized Businesses (SMBs) with the digital infrastructure typically reserved for massive enterprises. We believe that exceptional design and flawless technical execution shouldn't be mutually exclusive. By uniting engineering precision with creative foresight, we construct digital platforms that not only look remarkable but drive measurable business growth.
         </p>
 <div class="flex justify-center space-x-4 mt-12">
-<a class="social-icon" href="https://www.linkedin.com/in/elyra-global-0ab380407" target="_blank" aria-label="LinkedIn">
+<a class="social-icon" href="https://www.linkedin.com/in/elyra-global-0ab380407" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
 <i class="fab fa-linkedin-in"></i>
 </a>
-<a class="social-icon" href="https://www.instagram.com/elyra_global?igsh=MTA0eXIycHg5aXJnbg==" target="_blank" aria-label="Instagram">
+<a class="social-icon" href="https://www.instagram.com/elyra_global?igsh=MTA0eXIycHg5aXJnbg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
 <i class="fab fa-instagram"></i>
 </a>
-<a class="social-icon" href="https://chat.whatsapp.com/LubrUB2ki2M0T1Tomflg5b?mode=gi_t" target="_blank" aria-label="WhatsApp">
+<a class="social-icon" href="https://chat.whatsapp.com/LubrUB2ki2M0T1Tomflg5b?mode=gi_t" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
 <i class="fab fa-whatsapp"></i>
 </a>
 <a class="social-icon" href="mailto:elyra.global.co@gmail.com" aria-label="Gmail">
@@ -1026,27 +1162,27 @@ Connect
 </div>
 <div class="flex flex-col space-y-4">
 <h5 class="text-on-surface font-inter text-xs uppercase tracking-widest font-semibold mb-2">Services</h5>
-<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">Architecture</a>
-<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">Strategy</a>
-<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">Technical Audit</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#services">Web Design</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#services">SEO & Marketing</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#process">Our Process</a>
 </div>
 <div class="flex flex-col space-y-4">
 <h5 class="text-on-surface font-inter text-xs uppercase tracking-widest font-semibold mb-2">Company</h5>
-<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">Cloud Systems</a>
-<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">About Us</a>
-<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#">Careers</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#company">About Us</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="#case-studies">Case Studies</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors duration-300 opacity-80 hover:opacity-100 font-inter text-xs uppercase tracking-widest" href="mailto:elyra.global.co@gmail.com">Work With Us</a>
 </div>
 <div class="flex flex-col space-y-4">
 <h5 class="text-on-surface font-inter text-xs uppercase tracking-widest font-semibold mb-2">Connect</h5>
 <p class="text-on-surface-variant font-inter text-xs opacity-80">Follow us on social media</p>
 <div class="flex space-x-3">
-<a class="social-icon" href="https://www.linkedin.com/in/elyra-global-0ab380407" target="_blank" aria-label="LinkedIn">
+<a class="social-icon" href="https://www.linkedin.com/in/elyra-global-0ab380407" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
 <i class="fab fa-linkedin-in"></i>
 </a>
-<a class="social-icon" href="https://www.instagram.com/elyra_global?igsh=MTA0eXIycHg5aXJnbg==" target="_blank" aria-label="Instagram">
+<a class="social-icon" href="https://www.instagram.com/elyra_global?igsh=MTA0eXIycHg5aXJnbg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
 <i class="fab fa-instagram"></i>
 </a>
-<a class="social-icon" href="https://chat.whatsapp.com/LubrUB2ki2M0T1Tomflg5b?mode=gi_t" target="_blank" aria-label="WhatsApp">
+<a class="social-icon" href="https://chat.whatsapp.com/LubrUB2ki2M0T1Tomflg5b?mode=gi_t" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
 <i class="fab fa-whatsapp"></i>
 </a>
 <a class="social-icon" href="mailto:elyra.global.co@gmail.com" aria-label="Gmail">
@@ -1056,11 +1192,18 @@ Connect
 </div>
 </div>
 <div class="gradient-divider mt-8 mb-6"></div>
-<div class="py-6 text-center">
-<span class="text-on-surface-variant font-inter text-xs uppercase tracking-widest">© 2024 Elyra Global. Precision Engineering for Digital Excellence.</span>
+<div class="py-6 flex flex-col items-center gap-3">
+  <div class="flex items-center gap-6">
+    <a href="privacy-policy.html" class="text-on-surface-variant hover:text-primary-container font-inter text-xs uppercase tracking-widest transition-colors duration-200">Privacy Policy</a>
+    <span class="text-surface-variant">·</span>
+    <a href="terms.html" class="text-on-surface-variant hover:text-primary-container font-inter text-xs uppercase tracking-widest transition-colors duration-200">Terms &amp; Disclaimer</a>
+  </div>
+  <span class="text-on-surface-variant font-inter text-xs uppercase tracking-widest opacity-60">© <span id="footer-year"></span> Elyra Global. Operated in India.</span>
 </div>
 </footer>
 <script>
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
 // Theme Toggle Functionality
 const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
@@ -1202,7 +1345,7 @@ if (ctaForm) {
         <h2 id="contact-modal-title" class="text-2xl font-bold text-on-surface mb-2">Let's Build Something Great</h2>
         <p class="text-on-surface-variant text-sm mb-8">Choose your preferred way to connect and let's start your growth journey.</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="https://www.linkedin.com/in/elyra-global-0ab380407" target="_blank" class="platform-card linkedin">
+            <a href="https://www.linkedin.com/in/elyra-global-0ab380407" target="_blank" rel="noopener noreferrer" class="platform-card linkedin">
                 <div class="platform-icon" style="background:rgba(10,102,194,0.15);color:#0A66C2;">
                     <i class="fab fa-linkedin-in"></i>
                 </div>
@@ -1212,17 +1355,17 @@ if (ctaForm) {
                 </div>
                 <span class="material-symbols-outlined text-sm text-on-surface-variant ml-auto">arrow_forward</span>
             </a>
-            <a href="https://chat.whatsapp.com/LubrUB2ki2M0T1Tomflg5b?mode=gi_t" target="_blank" class="platform-card whatsapp">
+            <a href="https://wa.me/917848024531?text=Hi%20Team%20Elyra%2C%20I%20came%20across%20your%20website%20and%20would%20love%20to%20enquire%20about%20your%20services.%20Could%20we%20please%20schedule%20a%20free%20strategy%20call%3F" target="_blank" rel="noopener noreferrer" class="platform-card whatsapp">
                 <div class="platform-icon" style="background:rgba(37,211,102,0.15);color:#25D366;">
                     <i class="fab fa-whatsapp"></i>
                 </div>
                 <div>
                     <div class="font-semibold text-sm">WhatsApp</div>
-                    <div class="text-xs text-on-surface-variant mt-0.5">Quick Chat</div>
+                    <div class="text-xs text-on-surface-variant mt-0.5">Direct Message</div>
                 </div>
                 <span class="material-symbols-outlined text-sm text-on-surface-variant ml-auto">arrow_forward</span>
             </a>
-            <a href="https://www.instagram.com/elyra_global?igsh=MTA0eXIycHg5aXJnbg==" target="_blank" class="platform-card instagram">
+            <a href="https://www.instagram.com/elyra_global?igsh=MTA0eXIycHg5aXJnbg==" target="_blank" rel="noopener noreferrer" class="platform-card instagram">
                 <div class="platform-icon" style="background:linear-gradient(135deg,rgba(193,53,132,0.15),rgba(253,29,29,0.1));color:#C13584;">
                     <i class="fab fa-instagram"></i>
                 </div>
@@ -1232,7 +1375,7 @@ if (ctaForm) {
                 </div>
                 <span class="material-symbols-outlined text-sm text-on-surface-variant ml-auto">arrow_forward</span>
             </a>
-            <a href="https://mail.google.com/mail/?view=cm&to=elyra.global.co@gmail.com" target="_blank" class="platform-card gmail">
+            <a href="https://mail.google.com/mail/?view=cm&to=elyra.global.co@gmail.com" target="_blank" rel="noopener noreferrer" class="platform-card gmail">
                 <div class="platform-icon" style="background:rgba(234,67,53,0.15);color:#EA4335;">
                     <i class="fas fa-envelope"></i>
                 </div>

@@ -1292,7 +1292,7 @@ function startColdStartHint(elId) {
   const el = document.getElementById(elId);
   if (!el || _firstCallDone) return null;
   const hint = setTimeout(() => {
-    if (!_firstCallDone) showInlineError(elId, 'Waking up the server... usually takes a few seconds on first use.');
+    if (!_firstCallDone) showInlineError(elId, 'Sending your code — this may take a few seconds...');
   }, 2000);
   return hint;
 }

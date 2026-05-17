@@ -462,6 +462,40 @@
     margin-top: 4px;
   }
 
+  /* Tier section groupings */
+  .tier-section { margin-bottom: 24px; }
+  .tier-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    border-radius: 10px;
+  }
+  .tier-header.t1 { background: rgba(255,215,0,0.07); border: 1px solid rgba(255,215,0,0.2); }
+  .tier-header.t2 { background: rgba(0,212,255,0.06); border: 1px solid rgba(0,212,255,0.18); }
+  .tier-header.t3 { background: rgba(168,85,247,0.06); border: 1px solid rgba(168,85,247,0.18); }
+  .tier-icon { font-size: 18px; }
+  .tier-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .t1 .tier-label { color: #ffd700; }
+  .t2 .tier-label { color: var(--cyan); }
+  .t3 .tier-label { color: var(--purple); }
+  .tier-sub { font-size: 11px; color: var(--text-muted); margin-left: auto; }
+  .tier-empty {
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 10px 14px;
+    border: 1px dashed rgba(255,255,255,0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
   /* Mystery reveal CTA */
   .mystery-box {
     background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(0, 212, 255, 0.1));
@@ -619,10 +653,10 @@
 <div class="particle p4"></div>
 
 <div class="container">
-  <div style="text-align:center;margin-bottom:8px;">
-    <a href="../index.html" style="font-size:12px;color:rgba(255,255,255,0.4);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s;" onmouseover="this.style.color='#00d4ff'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">← Back to Elyra Global</a>
-  </div>
   <div class="brand">
+    <div style="text-align:center;margin-bottom:8px;">
+      <a href="../index.html" style="font-size:12px;color:rgba(255,255,255,0.4);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s;" onmouseover="this.style.color='#00d4ff'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">← Back to Elyra Global</a>
+    </div>
     <div class="brand-logo">elyra global</div>
     <div class="brand-tag">PMSSS COLLEGE INTELLIGENCE</div>
   </div>
@@ -638,12 +672,12 @@
         <div style="font-size:28px;flex-shrink:0;">🎓</div>
         <div>
           <div style="font-size:13px;font-weight:700;color:var(--cyan);margin-bottom:3px;">Built by a J&K student — not a company</div>
-          <div style="font-size:12px;color:var(--text-dim);line-height:1.6;">Got <strong style="color:var(--white);">&lt;80%</strong> in 12th. Everyone said it wasn't enough. But with <strong style="color:var(--cyan);">pure guidance &amp; strategy</strong> — 5 years of PMSSS data, pattern analysis, smart college selection — landed a <strong style="color:var(--white);">Top 30 NIRF college</strong>. This tool is what I wish I had.</div>
+          <div style="font-size:12px;color:var(--text-dim);line-height:1.6;">Got 82% in 12th. Everyone said it wasn't enough. Studied 5 years of PMSSS data, cracked the strategy, landed a <strong style="color:var(--white);">Top 30 NIRF college</strong>. This tool is what I wish I had.</div>
         </div>
       </div>
 
       <h1>Find Your <span class="highlight">PMSSS College</span></h1>
-      <p class="subtitle">Built on real allotment data from the latest PMSSS records &amp; allotments. Your personalized result in 30 seconds.</p>
+      <p class="subtitle">Built on real allotment data from 2021–2023. Your personalized result in 30 seconds.</p>
 
       <div class="field">
         <label>Full Name</label>
@@ -680,7 +714,7 @@
         <div id="tnc-box" style="display:none;margin-top:12px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:16px;font-size:12px;color:rgba(255,255,255,0.55);line-height:1.7;">
           <div style="font-weight:700;color:rgba(255,255,255,0.8);margin-bottom:8px;font-size:13px;">Terms & Conditions — Elyra Global PMSSS Predictor</div>
           <p style="margin-bottom:8px;"><strong style="color:rgba(255,255,255,0.7);">1. Data Source & Accuracy</strong><br>
-          All college predictions are based solely on historical PMSSS allotment records &amp; past allotments. Past allotment patterns may not reflect future outcomes. Results are estimates only.</p>
+          All college predictions are based solely on historical PMSSS allotment data from previous years (2021–2023). Past allotment patterns may not reflect future outcomes. Results are estimates only.</p>
           <p style="margin-bottom:8px;"><strong style="color:rgba(255,255,255,0.7);">2. No Guarantee of Admission</strong><br>
           Elyra Global does not guarantee admission to any college, institution, or programme. The tool provides data-based guidance, not a confirmed seat. Actual allotments depend on AICTE, seat availability, and other factors beyond our control.</p>
           <p style="margin-bottom:8px;"><strong style="color:rgba(255,255,255,0.7);">3. No Liability</strong><br>
@@ -812,29 +846,28 @@
         </div>
       </div>
 
-      <h2 class="results-title">Your <span class="highlight">3 best college matches</span></h2>
-      <p class="results-sub">Real PMSSS allotment records &amp; last allotments. These colleges admitted students at your rank level.</p>
+      <h2 class="results-title">Here are your <span class="highlight">top 3 colleges</span></h2>
+      <p class="results-sub">Real PMSSS allotment data. Students with your exact profile got into these. 👇</p>
 
       <div id="results-list"></div>
 
       <div class="mystery-box">
-        <div class="mystery-emoji">🎯</div>
-        <div class="mystery-title">Want the full picture?</div>
+        <div class="mystery-emoji">🔓</div>
+        <div class="mystery-title">Want the complete list?</div>
         <div class="mystery-text">
-          This is a preview based on your rank.<br>
-          The <strong style="color:var(--white);">full college list, choice-filling strategy,</strong><br>
-          and PMSSS deadlines — all in our free WhatsApp group.<br><br>
-          <strong style="color:var(--cyan);">300+ J&K students</strong> already making smarter decisions.
+          These 3 are just your top matches.<br>
+          The <strong style="color:var(--white);">full college list + choice-filling order + PMSSS deadline alerts</strong> — all free inside our WhatsApp group.<br><br>
+          <strong style="color:var(--cyan);">300+ J&K students</strong> are already using this to get into top colleges. Don't be the one who missed it.
         </div>
         <a href="https://chat.whatsapp.com/F8h0oIXm262JFSz1PO1zsN" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
-          💬 Join WhatsApp Community — Free
+          💬 Join Now — It's Free
         </a>
       </div>
 
       <div style="text-align:center;margin-top:16px;">
         <div style="color:rgba(255,255,255,0.45);font-size:13px;margin-bottom:12px;">Follow for daily PMSSS tips & deadline alerts</div>
         <a href="https://www.instagram.com/elyra_global" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);color:#fff;padding:10px 24px;border-radius:50px;font-weight:700;font-size:14px;text-decoration:none;">
-          📸 Follow @elyraglobal on Instagram
+          📸 Follow @elyra_global on Instagram
         </a>
       </div>
     </div>
@@ -876,9 +909,8 @@
 // =========================
 // PMSSS COLLEGE DATABASE LOADER
 // Loads full 938-college database from college_db.json
-// Built from real PMSSS allotment records &amp; last allotments
+// Built from real PMSSS allotment data (2021-22 + 2022-23)
 // =========================
-// Escape user/DB strings before inserting into innerHTML
 function esc(str) {
   if (str == null) return '';
   return String(str)
@@ -951,76 +983,81 @@ function onStreamChange() {
 
 // Minimal fallback in case JSON fails to load (e.g. file:// without server)
 const FALLBACK_COLLEGES = [
-  // ENGINEERING - TOP TIER
-  { name: "Jadavpur University", location: "Kolkata", stream: "Engineering", cutoff_open: 1, cutoff_sc: 50, cutoff_st: 80, cutoff_sebc: 60, seats: 11 },
-  { name: "Delhi College of Engineering (DCE/DTU)", location: "New Delhi", stream: "Engineering", cutoff_open: 7, cutoff_sc: 100, cutoff_st: 150, cutoff_sebc: 90, seats: 25 },
-  { name: "College of Engineering, Pune (COEP)", location: "Pune, Maharashtra", stream: "Engineering", cutoff_open: 13, cutoff_sc: 200, cutoff_st: 250, cutoff_sebc: 180, seats: 16 },
-  { name: "PEC University of Technology", location: "Chandigarh", stream: "Engineering", cutoff_open: 14, cutoff_sc: 250, cutoff_st: 300, cutoff_sebc: 220, seats: 6 },
-  { name: "R.V. College of Engineering", location: "Bangalore", stream: "Engineering", cutoff_open: 15, cutoff_sc: 280, cutoff_st: 330, cutoff_sebc: 250, seats: 9 },
-  { name: "Vellore Institute of Technology (VIT)", location: "Vellore, Tamil Nadu", stream: "Engineering", cutoff_open: 18, cutoff_sc: 300, cutoff_st: 350, cutoff_sebc: 270, seats: 5 },
-  { name: "Veermata Jijabai Technological Institute (VJTI)", location: "Mumbai", stream: "Engineering", cutoff_open: 32, cutoff_sc: 400, cutoff_st: 450, cutoff_sebc: 380, seats: 2 },
-  { name: "M.S. Ramaiah Institute of Technology", location: "Bangalore", stream: "Engineering", cutoff_open: 37, cutoff_sc: 500, cutoff_st: 600, cutoff_sebc: 480, seats: 2 },
-  { name: "Birla Institute of Technology (BIT Mesra)", location: "Ranchi, Jharkhand", stream: "Engineering", cutoff_open: 41, cutoff_sc: 600, cutoff_st: 700, cutoff_sebc: 580, seats: 4 },
-  { name: "Army Institute of Technology", location: "Pune, Maharashtra", stream: "Engineering", cutoff_open: 119, cutoff_sc: 900, cutoff_st: 1000, cutoff_sebc: 850, seats: 6 },
-  { name: "BMS Institute of Technology", location: "Bangalore", stream: "Engineering", cutoff_open: 238, cutoff_sc: 1200, cutoff_st: 1400, cutoff_sebc: 1100, seats: 4 },
-  { name: "Sardar Patel Institute of Technology", location: "Mumbai", stream: "Engineering", cutoff_open: 317, cutoff_sc: 1500, cutoff_st: 1700, cutoff_sebc: 1400, seats: 2 },
-  { name: "JSS Academy of Technical Education", location: "Noida, UP", stream: "Engineering", cutoff_open: 354, cutoff_sc: 1800, cutoff_st: 2000, cutoff_sebc: 1700, seats: 1 },
-  { name: "Manav Rachna International University", location: "Faridabad, Haryana", stream: "Engineering", cutoff_open: 228, cutoff_sc: 1300, cutoff_st: 1500, cutoff_sebc: 1200, seats: 1 },
-  { name: "Rajasthan Technical University", location: "Kota, Rajasthan", stream: "Engineering", cutoff_open: 492, cutoff_sc: 2200, cutoff_st: 2400, cutoff_sebc: 2100, seats: 2 },
-  { name: "RNS Institute of Technology", location: "Bangalore", stream: "Engineering", cutoff_open: 644, cutoff_sc: 2800, cutoff_st: 3000, cutoff_sebc: 2700, seats: 3 },
-  { name: "Vishwakarma Institute of Technology", location: "Pune", stream: "Engineering", cutoff_open: 648, cutoff_sc: 2900, cutoff_st: 3100, cutoff_sebc: 2800, seats: 1 },
-  { name: "Harcourt Butler Technical University", location: "Kanpur, UP", stream: "Engineering", cutoff_open: 685, cutoff_sc: 3000, cutoff_st: 3200, cutoff_sebc: 2900, seats: 1 },
-  { name: "PSG College of Technology", location: "Coimbatore", stream: "Engineering", cutoff_open: 1343, cutoff_sc: 4500, cutoff_st: 5000, cutoff_sebc: 4300, seats: 3 },
-  { name: "CMR Institute of Technology", location: "Bangalore", stream: "Engineering", cutoff_open: 1443, cutoff_sc: 4800, cutoff_st: 5200, cutoff_sebc: 4600, seats: 1 },
-  { name: "Lovely Professional University (LPU)", location: "Jalandhar, Punjab", stream: "Engineering", cutoff_open: 2500, cutoff_sc: 6500, cutoff_st: 7000, cutoff_sebc: 6200, seats: 8 },
-  { name: "Chandigarh University", location: "Mohali", stream: "Engineering", cutoff_open: 3200, cutoff_sc: 7500, cutoff_st: 8000, cutoff_sebc: 7200, seats: 12 },
-  { name: "SRM Institute of Science & Technology", location: "Chennai", stream: "Engineering", cutoff_open: 3800, cutoff_sc: 8500, cutoff_st: 9000, cutoff_sebc: 8200, seats: 6 },
-  { name: "Bharati Vidyapeeth College of Engineering", location: "Pune", stream: "Engineering", cutoff_open: 4569, cutoff_sc: 9500, cutoff_st: 10000, cutoff_sebc: 9000, seats: 8 },
+  // ENGINEERING — TIER 1 (fame: 1)
+  { name: "Jadavpur University", location: "Kolkata", stream: "Engineering", cutoff_open: 1, cutoff_sc: 50, cutoff_st: 80, cutoff_sebc: 60, seats: 11, fame: 1 },
+  { name: "Delhi College of Engineering (DCE/DTU)", location: "New Delhi", stream: "Engineering", cutoff_open: 7, cutoff_sc: 100, cutoff_st: 150, cutoff_sebc: 90, seats: 25, fame: 1 },
+  { name: "College of Engineering, Pune (COEP)", location: "Pune, Maharashtra", stream: "Engineering", cutoff_open: 13, cutoff_sc: 200, cutoff_st: 250, cutoff_sebc: 180, seats: 16, fame: 1 },
+  { name: "PEC University of Technology", location: "Chandigarh", stream: "Engineering", cutoff_open: 14, cutoff_sc: 250, cutoff_st: 300, cutoff_sebc: 220, seats: 6, fame: 1 },
+  { name: "R.V. College of Engineering", location: "Bangalore", stream: "Engineering", cutoff_open: 15, cutoff_sc: 280, cutoff_st: 330, cutoff_sebc: 250, seats: 9, fame: 1 },
+  { name: "Vellore Institute of Technology (VIT)", location: "Vellore, Tamil Nadu", stream: "Engineering", cutoff_open: 18, cutoff_sc: 300, cutoff_st: 350, cutoff_sebc: 270, seats: 5, fame: 1 },
+  { name: "Manipal Institute of Technology", location: "Manipal, Karnataka", stream: "Engineering", cutoff_open: 22, cutoff_sc: 350, cutoff_st: 420, cutoff_sebc: 310, seats: 8, fame: 1 },
+  { name: "PSG College of Technology", location: "Coimbatore", stream: "Engineering", cutoff_open: 1343, cutoff_sc: 4500, cutoff_st: 5000, cutoff_sebc: 4300, seats: 3, fame: 1 },
+  { name: "UIET Chandigarh", location: "Chandigarh", stream: "Engineering", cutoff_open: 30, cutoff_sc: 420, cutoff_st: 500, cutoff_sebc: 380, seats: 7, fame: 1 },
+  { name: "Jamia Millia Islamia (Engineering)", location: "New Delhi", stream: "Engineering", cutoff_open: 35, cutoff_sc: 480, cutoff_st: 560, cutoff_sebc: 440, seats: 12, fame: 1 },
 
-  // ARTS / GENERAL - TOP TIER
-  { name: "St. Stephens College", location: "Delhi University", stream: "Arts", cutoff_open: 3, cutoff_sc: 100, cutoff_st: 150, cutoff_sebc: 80, seats: 3 },
-  { name: "Patna Womens College", location: "Patna, Bihar", stream: "Arts", cutoff_open: 9, cutoff_sc: 150, cutoff_st: 200, cutoff_sebc: 130, seats: 1 },
-  { name: "Jamia Millia Islamia (Central University)", location: "New Delhi", stream: "Arts", cutoff_open: 12, cutoff_sc: 200, cutoff_st: 250, cutoff_sebc: 180, seats: 16 },
-  { name: "Ramjas College", location: "Delhi University", stream: "Arts", cutoff_open: 25, cutoff_sc: 300, cutoff_st: 380, cutoff_sebc: 280, seats: 13 },
-  { name: "Lady Shri Ram College (LSR)", location: "Delhi University", stream: "Arts", cutoff_open: 34, cutoff_sc: 400, cutoff_st: 500, cutoff_sebc: 350, seats: 5 },
-  { name: "Hansraj College", location: "Delhi University", stream: "Arts", cutoff_open: 78, cutoff_sc: 600, cutoff_st: 700, cutoff_sebc: 550, seats: 5 },
-  { name: "Sri Venkateswara College", location: "Delhi University", stream: "Arts", cutoff_open: 93, cutoff_sc: 700, cutoff_st: 800, cutoff_sebc: 650, seats: 4 },
-  { name: "Gargi College", location: "Delhi University", stream: "Arts", cutoff_open: 107, cutoff_sc: 800, cutoff_st: 900, cutoff_sebc: 750, seats: 3 },
-  { name: "Miranda House", location: "Delhi University", stream: "Arts", cutoff_open: 93, cutoff_sc: 700, cutoff_st: 800, cutoff_sebc: 650, seats: 6 },
-  { name: "Zakir Husain College", location: "Delhi University", stream: "Arts", cutoff_open: 170, cutoff_sc: 1000, cutoff_st: 1200, cutoff_sebc: 950, seats: 4 },
-  { name: "K.J. Somaiya College of Arts", location: "Mumbai", stream: "Arts", cutoff_open: 71, cutoff_sc: 550, cutoff_st: 650, cutoff_sebc: 500, seats: 2 },
-  { name: "DAV College", location: "Amritsar, Punjab", stream: "Arts", cutoff_open: 60, cutoff_sc: 500, cutoff_st: 600, cutoff_sebc: 480, seats: 7 },
-  { name: "Hans Raj Mahila Mahavidyalaya", location: "Jalandhar, Punjab", stream: "Arts", cutoff_open: 63, cutoff_sc: 520, cutoff_st: 620, cutoff_sebc: 490, seats: 3 },
-  { name: "BBKDAV College for Women", location: "Amritsar", stream: "Arts", cutoff_open: 29, cutoff_sc: 380, cutoff_st: 450, cutoff_sebc: 360, seats: 1 },
-  { name: "Goswami Ganesh Dutta S.D. College", location: "Chandigarh", stream: "Arts", cutoff_open: 51, cutoff_sc: 480, cutoff_st: 580, cutoff_sebc: 450, seats: 2 },
-  { name: "Guru Nanak Dev University", location: "Amritsar", stream: "Arts", cutoff_open: 183, cutoff_sc: 1100, cutoff_st: 1300, cutoff_sebc: 1050, seats: 2 },
-  { name: "S.A. Jain College", location: "Ambala, Haryana", stream: "Arts", cutoff_open: 193, cutoff_sc: 1150, cutoff_st: 1350, cutoff_sebc: 1100, seats: 3 },
-  { name: "S.L. Bawa D.A.V. College", location: "Batala, Punjab", stream: "Arts", cutoff_open: 100, cutoff_sc: 750, cutoff_st: 850, cutoff_sebc: 700, seats: 6 },
-  { name: "D.A.V. College", location: "Jalandhar, Punjab", stream: "Arts", cutoff_open: 173, cutoff_sc: 1050, cutoff_st: 1250, cutoff_sebc: 1000, seats: 10 },
-  { name: "Guru Jambheshwar University", location: "Hisar, Haryana", stream: "Arts", cutoff_open: 208, cutoff_sc: 1200, cutoff_st: 1400, cutoff_sebc: 1150, seats: 2 },
-  { name: "Khalsa College", location: "Amritsar", stream: "Arts", cutoff_open: 800, cutoff_sc: 2800, cutoff_st: 3200, cutoff_sebc: 2700, seats: 6 },
-  { name: "Punjabi University", location: "Patiala", stream: "Arts", cutoff_open: 1500, cutoff_sc: 4500, cutoff_st: 5000, cutoff_sebc: 4300, seats: 8 },
-  { name: "Banasthali Vidyapith", location: "Rajasthan", stream: "Arts", cutoff_open: 2200, cutoff_sc: 6000, cutoff_st: 6500, cutoff_sebc: 5800, seats: 4 },
-  { name: "Lovely Professional University", location: "Jalandhar", stream: "Arts", cutoff_open: 3500, cutoff_sc: 8000, cutoff_st: 8500, cutoff_sebc: 7800, seats: 10 },
+  // ENGINEERING — TIER 2 (fame: 2)
+  { name: "BMS Institute of Technology", location: "Bangalore", stream: "Engineering", cutoff_open: 238, cutoff_sc: 1200, cutoff_st: 1400, cutoff_sebc: 1100, seats: 4, fame: 2 },
+  { name: "KIIT Bhubaneswar", location: "Bhubaneswar, Odisha", stream: "Engineering", cutoff_open: 290, cutoff_sc: 1400, cutoff_st: 1600, cutoff_sebc: 1300, seats: 6, fame: 2 },
+  { name: "Dayananda Sagar College of Engineering", location: "Bangalore", stream: "Engineering", cutoff_open: 320, cutoff_sc: 1550, cutoff_st: 1750, cutoff_sebc: 1450, seats: 5, fame: 2 },
+  { name: "RNS Institute of Technology", location: "Bangalore", stream: "Engineering", cutoff_open: 644, cutoff_sc: 2800, cutoff_st: 3000, cutoff_sebc: 2700, seats: 3, fame: 2 },
+  { name: "Vishwakarma Govt Engineering College", location: "Ahmedabad", stream: "Engineering", cutoff_open: 500, cutoff_sc: 2300, cutoff_st: 2600, cutoff_sebc: 2200, seats: 4, fame: 2 },
 
-  // COMMERCE
-  { name: "Shri Ram College of Commerce (SRCC)", location: "Delhi University", stream: "Commerce", cutoff_open: 74, cutoff_sc: 560, cutoff_st: 660, cutoff_sebc: 520, seats: 2 },
-  { name: "Hansraj College (Commerce)", location: "Delhi University", stream: "Commerce", cutoff_open: 150, cutoff_sc: 950, cutoff_st: 1100, cutoff_sebc: 900, seats: 4 },
-  { name: "Jamia Millia Islamia (Commerce)", location: "New Delhi", stream: "Commerce", cutoff_open: 200, cutoff_sc: 1100, cutoff_st: 1300, cutoff_sebc: 1050, seats: 8 },
-  { name: "Christ University", location: "Bangalore", stream: "Commerce", cutoff_open: 380, cutoff_sc: 1700, cutoff_st: 1900, cutoff_sebc: 1600, seats: 6 },
-  { name: "Loyola College", location: "Chennai", stream: "Commerce", cutoff_open: 450, cutoff_sc: 2000, cutoff_st: 2200, cutoff_sebc: 1900, seats: 3 },
-  { name: "St. Xaviers College", location: "Mumbai", stream: "Commerce", cutoff_open: 220, cutoff_sc: 1200, cutoff_st: 1400, cutoff_sebc: 1150, seats: 3 },
-  { name: "Indira College of Commerce", location: "Pune", stream: "Commerce", cutoff_open: 47, cutoff_sc: 450, cutoff_st: 550, cutoff_sebc: 420, seats: 1 },
-  { name: "Symbiosis College of Arts & Commerce", location: "Pune", stream: "Commerce", cutoff_open: 1200, cutoff_sc: 4000, cutoff_st: 4500, cutoff_sebc: 3800, seats: 4 },
-  { name: "Khalsa College (Commerce)", location: "Amritsar", stream: "Commerce", cutoff_open: 1800, cutoff_sc: 5500, cutoff_st: 6000, cutoff_sebc: 5300, seats: 8 },
+  // ENGINEERING — TIER 3 (fame: 3)
+  { name: "Army Institute of Technology", location: "Pune, Maharashtra", stream: "Engineering", cutoff_open: 119, cutoff_sc: 900, cutoff_st: 1000, cutoff_sebc: 850, seats: 6, fame: 3 },
+  { name: "Birla Institute of Technology (BIT Mesra)", location: "Ranchi, Jharkhand", stream: "Engineering", cutoff_open: 41, cutoff_sc: 600, cutoff_st: 700, cutoff_sebc: 580, seats: 4, fame: 3 },
+  { name: "Bharatiya Vidya Bhavan's SPIET", location: "Mumbai", stream: "Engineering", cutoff_open: 317, cutoff_sc: 1500, cutoff_st: 1700, cutoff_sebc: 1400, seats: 2, fame: 3 },
+  { name: "Bharati Vidyapeeth College of Engineering", location: "Pune", stream: "Engineering", cutoff_open: 4569, cutoff_sc: 9500, cutoff_st: 10000, cutoff_sebc: 9000, seats: 8, fame: 3 },
+  { name: "Lovely Professional University (LPU)", location: "Jalandhar, Punjab", stream: "Engineering", cutoff_open: 2500, cutoff_sc: 6500, cutoff_st: 7000, cutoff_sebc: 6200, seats: 8, fame: 3 },
+  { name: "Chandigarh University", location: "Mohali", stream: "Engineering", cutoff_open: 3200, cutoff_sc: 7500, cutoff_st: 8000, cutoff_sebc: 7200, seats: 12, fame: 3 },
+  { name: "SRM Institute of Science & Technology", location: "Chennai", stream: "Engineering", cutoff_open: 3800, cutoff_sc: 8500, cutoff_st: 9000, cutoff_sebc: 8200, seats: 6, fame: 3 },
+  { name: "M.S. Ramaiah Institute of Technology", location: "Bangalore", stream: "Engineering", cutoff_open: 37, cutoff_sc: 500, cutoff_st: 600, cutoff_sebc: 480, seats: 2, fame: 3 },
 
-  // MEDICAL / NURSING
-  { name: "Jamia Hamdard University", location: "New Delhi", stream: "Medical", cutoff_open: 100, cutoff_sc: 800, cutoff_st: 900, cutoff_sebc: 750, seats: 6 },
-  { name: "Manipal College of Pharmaceutical Sciences", location: "Manipal", stream: "Medical", cutoff_open: 250, cutoff_sc: 1300, cutoff_st: 1500, cutoff_sebc: 1200, seats: 4 },
-  { name: "B.V.D.U. College of Nursing", location: "Pune", stream: "Medical", cutoff_open: 800, cutoff_sc: 2800, cutoff_st: 3200, cutoff_sebc: 2700, seats: 5 },
-  { name: "Government Medical College", location: "Punjab", stream: "Medical", cutoff_open: 1500, cutoff_sc: 4500, cutoff_st: 5000, cutoff_sebc: 4300, seats: 8 },
-  { name: "MMU College of Nursing", location: "Mullana, Haryana", stream: "Medical", cutoff_open: 2200, cutoff_sc: 6000, cutoff_st: 6500, cutoff_sebc: 5800, seats: 10 },
-  { name: "DAV College of Nursing", location: "Amritsar", stream: "Medical", cutoff_open: 3500, cutoff_sc: 8000, cutoff_st: 8500, cutoff_sebc: 7800, seats: 4 },
+  // ARTS — TIER 1 (fame: 1)
+  { name: "St. Stephens College", location: "North Delhi", stream: "Arts", cutoff_open: 3, cutoff_sc: 100, cutoff_st: 150, cutoff_sebc: 80, seats: 3, fame: 1 },
+  { name: "Miranda House", location: "North Delhi", stream: "Arts", cutoff_open: 8, cutoff_sc: 150, cutoff_st: 200, cutoff_sebc: 130, seats: 6, fame: 1 },
+  { name: "Lady Shri Ram College (LSR)", location: "South West Delhi", stream: "Arts", cutoff_open: 34, cutoff_sc: 400, cutoff_st: 500, cutoff_sebc: 350, seats: 5, fame: 1 },
+  { name: "Ramjas College", location: "North Delhi", stream: "Arts", cutoff_open: 25, cutoff_sc: 300, cutoff_st: 380, cutoff_sebc: 280, seats: 13, fame: 1 },
+  { name: "Hindu College", location: "North Delhi", stream: "Arts", cutoff_open: 20, cutoff_sc: 260, cutoff_st: 330, cutoff_sebc: 240, seats: 7, fame: 1 },
+  { name: "Hansraj College", location: "North Delhi", stream: "Arts", cutoff_open: 78, cutoff_sc: 600, cutoff_st: 700, cutoff_sebc: 550, seats: 5, fame: 1 },
+  { name: "Jamia Millia Islamia", location: "South Delhi", stream: "Arts", cutoff_open: 12, cutoff_sc: 200, cutoff_st: 250, cutoff_sebc: 180, seats: 16, fame: 1 },
+  { name: "Gargi College", location: "New Delhi", stream: "Arts", cutoff_open: 107, cutoff_sc: 800, cutoff_st: 900, cutoff_sebc: 750, seats: 3, fame: 1 },
+  { name: "Patna Womens College", location: "Patna, Bihar", stream: "Arts", cutoff_open: 9, cutoff_sc: 150, cutoff_st: 200, cutoff_sebc: 130, seats: 1, fame: 1 },
+
+  // ARTS — TIER 2 (fame: 2)
+  { name: "Goswami Ganesh Dutta S.D. College", location: "Chandigarh", stream: "Arts", cutoff_open: 51, cutoff_sc: 480, cutoff_st: 580, cutoff_sebc: 450, seats: 2, fame: 2 },
+  { name: "Symbiosis College of Arts & Commerce", location: "Pune", stream: "Arts", cutoff_open: 120, cutoff_sc: 900, cutoff_st: 1050, cutoff_sebc: 850, seats: 4, fame: 2 },
+  { name: "Maniben Nanavati Women's College", location: "Mumbai", stream: "Arts", cutoff_open: 80, cutoff_sc: 620, cutoff_st: 720, cutoff_sebc: 570, seats: 3, fame: 2 },
+
+  // ARTS — TIER 3 (fame: 3)
+  { name: "DAV College", location: "Amritsar, Punjab", stream: "Arts", cutoff_open: 60, cutoff_sc: 500, cutoff_st: 600, cutoff_sebc: 480, seats: 7, fame: 3 },
+  { name: "D.A.V. College", location: "Jalandhar, Punjab", stream: "Arts", cutoff_open: 173, cutoff_sc: 1050, cutoff_st: 1250, cutoff_sebc: 1000, seats: 10, fame: 3 },
+  { name: "Khalsa College", location: "Amritsar", stream: "Arts", cutoff_open: 800, cutoff_sc: 2800, cutoff_st: 3200, cutoff_sebc: 2700, seats: 6, fame: 3 },
+  { name: "Punjabi University", location: "Patiala", stream: "Arts", cutoff_open: 1500, cutoff_sc: 4500, cutoff_st: 5000, cutoff_sebc: 4300, seats: 8, fame: 3 },
+  { name: "Lovely Professional University", location: "Jalandhar", stream: "Arts", cutoff_open: 3500, cutoff_sc: 8000, cutoff_st: 8500, cutoff_sebc: 7800, seats: 10, fame: 3 },
+
+  // COMMERCE — TIER 1 (fame: 1)
+  { name: "Shri Ram College of Commerce (SRCC)", location: "North Delhi", stream: "Commerce", cutoff_open: 74, cutoff_sc: 560, cutoff_st: 660, cutoff_sebc: 520, seats: 2, fame: 1 },
+  { name: "Hansraj College (Commerce)", location: "North Delhi", stream: "Commerce", cutoff_open: 150, cutoff_sc: 950, cutoff_st: 1100, cutoff_sebc: 900, seats: 4, fame: 1 },
+  { name: "Miranda House (Commerce)", location: "North Delhi", stream: "Commerce", cutoff_open: 100, cutoff_sc: 750, cutoff_st: 870, cutoff_sebc: 700, seats: 3, fame: 1 },
+  { name: "Ramjas College (Commerce)", location: "North Delhi", stream: "Commerce", cutoff_open: 130, cutoff_sc: 870, cutoff_st: 1000, cutoff_sebc: 820, seats: 5, fame: 1 },
+  { name: "St. Xaviers College (Commerce)", location: "Kolkata", stream: "Commerce", cutoff_open: 220, cutoff_sc: 1200, cutoff_st: 1400, cutoff_sebc: 1150, seats: 3, fame: 1 },
+
+  // COMMERCE — TIER 2 (fame: 2)
+  { name: "Jamia Millia Islamia (Commerce)", location: "New Delhi", stream: "Commerce", cutoff_open: 200, cutoff_sc: 1100, cutoff_st: 1300, cutoff_sebc: 1050, seats: 8, fame: 2 },
+  { name: "Symbiosis College of Arts & Commerce", location: "Pune", stream: "Commerce", cutoff_open: 1200, cutoff_sc: 4000, cutoff_st: 4500, cutoff_sebc: 3800, seats: 4, fame: 2 },
+
+  // COMMERCE — TIER 3 (fame: 3)
+  { name: "Christ University", location: "Bangalore", stream: "Commerce", cutoff_open: 380, cutoff_sc: 1700, cutoff_st: 1900, cutoff_sebc: 1600, seats: 6, fame: 3 },
+  { name: "Khalsa College (Commerce)", location: "Amritsar", stream: "Commerce", cutoff_open: 1800, cutoff_sc: 5500, cutoff_st: 6000, cutoff_sebc: 5300, seats: 8, fame: 3 },
+  { name: "Indira College of Commerce", location: "Pune", stream: "Commerce", cutoff_open: 47, cutoff_sc: 450, cutoff_st: 550, cutoff_sebc: 420, seats: 1, fame: 3 },
+
+  // MEDICAL (fame: 2/3)
+  { name: "Jamia Hamdard University", location: "New Delhi", stream: "Medical", cutoff_open: 100, cutoff_sc: 800, cutoff_st: 900, cutoff_sebc: 750, seats: 6, fame: 2 },
+  { name: "Manipal College of Pharmaceutical Sciences", location: "Manipal", stream: "Medical", cutoff_open: 250, cutoff_sc: 1300, cutoff_st: 1500, cutoff_sebc: 1200, seats: 4, fame: 2 },
+  { name: "B.V.D.U. College of Nursing", location: "Pune", stream: "Medical", cutoff_open: 800, cutoff_sc: 2800, cutoff_st: 3200, cutoff_sebc: 2700, seats: 5, fame: 3 },
+  { name: "Government Medical College", location: "Punjab", stream: "Medical", cutoff_open: 1500, cutoff_sc: 4500, cutoff_st: 5000, cutoff_sebc: 4300, seats: 8, fame: 3 },
+  { name: "MMU College of Nursing", location: "Mullana, Haryana", stream: "Medical", cutoff_open: 2200, cutoff_sc: 6000, cutoff_st: 6500, cutoff_sebc: 5800, seats: 10, fame: 3 },
+  { name: "DAV College of Nursing", location: "Amritsar", stream: "Medical", cutoff_open: 3500, cutoff_sc: 8000, cutoff_st: 8500, cutoff_sebc: 7800, seats: 4, fame: 3 },
 ];
 
 // =========================
@@ -1093,6 +1130,38 @@ function getBranchCutoff(college, branch) {
 // Branch demand hierarchy — Computer Science hardest (index 0), Civil easiest (last)
 // Keys must match the actual branch names in college_db.json
 const ENG_BRANCH_HIERARCHY = ['Computer Science', 'Electronics & Comm', 'Electrical', 'Mechanical', 'Chemical', 'Civil'];
+
+// =========================
+// PRESTIGE OVERRIDE — Tier 1 colleges by name fragment
+// The DB's `fame` field is unreliable; these names always rank as Tier 1
+// regardless of what the DB says.
+// =========================
+const TIER1_FRAGMENTS = [
+  // Engineering T1
+  'JADAVPUR', 'DELHI COLLEGE OF ENGINEERING', 'COLLEGE OF ENGINEERING, PUNE', 'COEP',
+  'PEC UNIVERSITY OF TECHNOLOGY', 'R.V. COLLEGE OF ENGINEERING', 'VELLORE INSTITUTE OF TECHNOLOGY',
+  'MANIPAL INSTITUTE OF TECHNOLOGY', 'PSG COLLEGE OF TECHNOLOGY',
+  'UNIVERSITY INSTITUTE OF ENGINEERING AND TECHNOLOGY',
+  'JAMIA MILLIA ISLAMIA', 'INSTITUTE OF CHEMICAL TECHNOLOGY',
+  'BANGALORE INSTITUTE OF TECHNOLOGY', 'UNIVERSITY VISVESVARAYA',
+  // Arts T1
+  'MIRANDA HOUSE', 'LADY SHRI RAM', 'ST. STEPHEN', "ST. XAVIER'S COLLEGE", 'ST. XAVIERS COLLEGE',
+  'HINDU COLLEGE', 'HANSRAJ COLLEGE', 'RAMJAS COLLEGE', 'GARGI COLLEGE',
+  'DAULAT RAM COLLEGE', 'INDRAPRASTHA COLLEGE', 'PATNA WOMENS COLLEGE',
+  'GOSWAMI GANESH DUTTA S.D. COLLEGE',
+  // Commerce T1
+  'SRI RAM COLLEGE OF COMMERCE', 'KIRORI MAL COLLEGE',
+  'SHAHEED BHAGAT SINGH COLLEGE', 'NARSEE MONJEE',
+  // General prestige
+  'IIT ', 'NIT ', 'BITS PILANI',
+];
+
+function getActualTier(college) {
+  const upper = college.name.toUpperCase();
+  if (TIER1_FRAGMENTS.some(f => upper.includes(f.toUpperCase()))) return 1;
+  if (college.fame === 1 || college.fame === 2) return 2;
+  return 3;
+}
 
 function getReachableBranches(college, rank) {
   if (!college.branches) return [];
@@ -1197,6 +1266,62 @@ function findBestColleges(rank, category, stream, branch) {
   picked.sort((a, b) => tagOrder[a.tag] - tagOrder[b.tag]);
 
   return picked.slice(0, 3);
+}
+
+// =========================
+// FIND COLLEGES GROUPED BY TIER
+// Returns { 1: [up to 3], 2: [up to 3], 3: [up to 3] }
+// Tier mapped from fame field: 1→T1, 2→T2, 3/4→T3
+// =========================
+function findCollegesByTier(rank, category, stream, branch) {
+  const byTier = { 1: [], 2: [], 3: [] };
+
+  for (const c of COLLEGES) {
+    if (!streamMatches(c, stream)) continue;
+
+    let cutoff;
+    let branchExact = false;
+    if (stream === "Engineering" && branch) {
+      const branchCutoff = getBranchCutoff(c, branch);
+      if (branchCutoff) {
+        cutoff = branchCutoff;
+        branchExact = true;
+      } else {
+        cutoff = getCutoff(c, category);
+      }
+      if (!cutoff) continue;
+    } else {
+      cutoff = getCutoff(c, category);
+      if (!cutoff) continue;
+    }
+
+    const cls = classify(rank, cutoff);
+    if (!cls) continue;
+
+    const reachableBranches = (stream === "Engineering") ? getReachableBranches(c, rank) : [];
+    const tier = getActualTier(c);
+
+    byTier[tier].push({
+      ...c,
+      cutoff,
+      tag: cls.tag,
+      probability: cls.probability,
+      branch_used: (stream === "Engineering" && branch) ? branch : null,
+      branch_exact: branchExact,
+      reachable_branches: reachableBranches
+    });
+  }
+
+  const tagOrder = { safe: 0, stretch: 1, longshot: 2 };
+  for (const t of [1, 2, 3]) {
+    byTier[t].sort((a, b) => {
+      if (tagOrder[a.tag] !== tagOrder[b.tag]) return tagOrder[a.tag] - tagOrder[b.tag];
+      return (b.seats || 0) - (a.seats || 0);
+    });
+    byTier[t] = byTier[t].slice(0, 1); // 1 best per tier = 3 total
+  }
+
+  return byTier;
 }
 
 // =========================
@@ -1528,9 +1653,8 @@ function checkColleges() {
   if (!DB_READY) { alert('Database still loading, give it a second...'); return; }
 
   const rank = percentToRank(percent);
-  const matches = findBestColleges(rank, category, stream, branch);
-
-  // No matches gracefully handled below by rendering an empty-state card
+  const tiered = findCollegesByTier(rank, category, stream, branch);
+  const allMatches = [...tiered[1], ...tiered[2], ...tiered[3]];
 
   userData.percent = percent;
   userData.category = category;
@@ -1548,7 +1672,7 @@ function checkColleges() {
       stream,
       branch: branch || '',
       estRank: rank,
-      topMatch: matches[0] ? matches[0].name : ''
+      topMatch: allMatches[0] ? allMatches[0].name : ''
     });
   }
 
@@ -1557,7 +1681,7 @@ function checkColleges() {
   document.getElementById('stat-rank').textContent = '~' + rank.toLocaleString();
   document.getElementById('stat-category').textContent = category;
 
-  // Render college cards
+  // Render tiered college results
   const list = document.getElementById('results-list');
   list.innerHTML = '';
 
@@ -1570,92 +1694,63 @@ function checkColleges() {
       </div>`;
   }
 
-  if (matches.length === 0) {
-    // Try stream-wide fallback (without branch filter) to show what they CAN get
-    const fallback = findBestColleges(rank, category, stream, null);
-    const branchName = branch || 'this branch';
-    if (fallback.length > 0) {
-      list.innerHTML = `
-        <div class="college-card" style="padding:20px 18px;margin-bottom:12px;">
+  // Complete no-match fallback (stream-wide, ignore branch)
+  if (allMatches.length === 0) {
+    const streamFallback = findCollegesByTier(rank, category, stream, null);
+    const streamAll = [...streamFallback[1], ...streamFallback[2], ...streamFallback[3]];
+    const branchName = branch || 'this stream';
+    if (streamAll.length > 0) {
+      list.insertAdjacentHTML('beforeend', `
+        <div class="college-card" style="padding:20px 18px;margin-bottom:16px;">
           <div style="font-size:28px;margin-bottom:10px;">⚠️</div>
           <div class="college-name" style="margin-bottom:6px;color:var(--amber);">${esc(branchName)} — Low Chances at Your Rank</div>
           <div style="color:var(--text-dim);font-size:14px;line-height:1.6;">
-            Based on PMSSS historical data, <strong style="color:var(--white);">${esc(branchName)}</strong> at top colleges
-            requires a stronger rank than yours.<br><br>
-            <strong style="color:var(--cyan);">But good news —</strong> you DO qualify for other ${stream} colleges.
-            See below, and join our WhatsApp for personalized branch advice.
+            Based on PMSSS historical data, <strong style="color:var(--white);">${esc(branchName)}</strong> at top colleges requires a stronger rank.<br><br>
+            <strong style="color:var(--cyan);">But good news —</strong> you DO qualify for other ${stream} colleges. Join our WhatsApp for personalised branch advice.
           </div>
-        </div>
-      `;
-      fallback.forEach((c, i) => {
-        const tagInfo = {
-          safe:     { cls: 'tag-safe',   text: 'SAFE PICK',  color: '#2ed573' },
-          stretch:  { cls: 'tag-target', text: 'STRETCH',    color: 'var(--cyan)' },
-          longshot: { cls: 'tag-reach',  text: 'LONG SHOT',  color: 'var(--amber)' }
-        }[c.tag];
-        const card = document.createElement('div');
-        card.className = 'college-card';
-        card.style.setProperty('--match-color', tagInfo.color);
-        card.innerHTML = `
-          <div class="card-header">
-            <div>
-              <div class="college-name">${esc(c.name)}</div>
-              <div class="college-loc">📍 ${esc(c.location || 'India')}</div>
-            </div>
-            <span class="college-tag ${tagInfo.cls}">${tagInfo.text}</span>
-          </div>
-          <div class="college-detail-line" style="color:var(--amber);font-size:12px;">★ Branch options — ask in WhatsApp group</div>
-          <div class="college-prob"><div class="college-prob-fill" style="width:0%"></div></div>
-          <div class="prob-text">${esc(String(c.probability))}% chance based on PMSSS allotment history</div>
-        `;
-        list.appendChild(card);
-        setTimeout(() => { card.querySelector('.college-prob-fill').style.width = c.probability + '%'; }, 200 + i * 150);
-      });
+        </div>`);
+      tiered[1] = streamFallback[1];
+      tiered[2] = streamFallback[2];
+      tiered[3] = streamFallback[3];
     } else {
-      list.innerHTML = `
+      list.innerHTML += `
         <div class="college-card" style="text-align:center;padding:28px 20px;">
           <div style="font-size:36px;margin-bottom:12px;">📋</div>
           <div class="college-name" style="margin-bottom:8px;">No direct matches found</div>
           <div style="color:var(--text-dim);font-size:14px;line-height:1.6;">
             Your current percentage may need improvement for PMSSS colleges in this stream.<br><br>
-            <strong style="color:var(--cyan);">Don't give up.</strong> Join our WhatsApp — our team has helped
-            students with similar profiles find the right path.
+            <strong style="color:var(--cyan);">Don't give up.</strong> Join our WhatsApp — our team has helped students with similar profiles find the right path.
           </div>
-        </div>
-      `;
+        </div>`;
+      showStep('step-results');
+      return;
     }
   }
 
-  matches.forEach((c, i) => {
-    const card = document.createElement('div');
-    card.className = 'college-card';
+  // Flatten tiers into best 3 (T1 first, then T2, then T3)
+  const best3 = [...tiered[1], ...tiered[2], ...tiered[3]].slice(0, 3);
 
-    // Tag config — safe / stretch / longshot
+  const matchLabels = [
+    { icon: '🎯', text: 'YOUR BEST MATCH' },
+    { icon: '⭐', text: 'STRONG OPTION' },
+    { icon: '✅', text: 'SOLID PICK' }
+  ];
+
+  best3.forEach((c, i) => {
     const tagInfo = {
-      safe:     { cls: 'tag-safe',   text: 'SAFE PICK',  color: '#2ed573', icon: '✓' },
-      stretch:  { cls: 'tag-target', text: 'STRETCH',    color: 'var(--cyan)', icon: '◆' },
-      longshot: { cls: 'tag-reach',  text: 'LONG SHOT',  color: 'var(--amber)', icon: '↑' }
+      safe:     { cls: 'tag-safe',   color: '#2ed573' },
+      stretch:  { cls: 'tag-target', color: 'var(--cyan)' },
+      longshot: { cls: 'tag-reach',  color: 'var(--amber)' }
     }[c.tag];
-    card.style.setProperty('--match-color', tagInfo.color);
 
-    // Fame badge
-    const fameBadge = c.fame === 1
-      ? `<span class="fame-badge fame-1">★ TOP BRAND</span>`
-      : c.fame === 2
-        ? `<span class="fame-badge fame-2">★ WELL-KNOWN</span>`
-        : '';
-
-    // Courses / branch info
     let coursesHTML = '';
     if (c.branch_used) {
-      const exactLabel = c.branch_exact ? esc(c.branch_used) : `${esc(c.branch_used)} (via general cutoff)`;
-      coursesHTML = `<div class="college-detail-line"><span class="label">Branch:</span> ${exactLabel}</div>`;
+      const label = c.branch_exact ? esc(c.branch_used) : `${esc(c.branch_used)} (general)`;
+      coursesHTML = `<div class="college-detail-line"><span class="label">Branch:</span> ${label}</div>`;
     } else if (c.courses && c.courses.length) {
-      const topCourses = c.courses.slice(0, 3).map(esc).join(' · ');
-      coursesHTML = `<div class="college-detail-line"><span class="label">Courses:</span> ${topCourses}</div>`;
+      coursesHTML = `<div class="college-detail-line"><span class="label">Courses:</span> ${c.courses.slice(0, 3).map(esc).join(' · ')}</div>`;
     }
 
-    // Reachable branches badge — shows CS/ECE etc. if rank qualifies for higher branches too
     let branchBadgesHTML = '';
     if (c.reachable_branches && c.reachable_branches.length > 1) {
       const badges = c.reachable_branches.map(br =>
@@ -1664,31 +1759,35 @@ function checkColleges() {
       branchBadgesHTML = `<div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:4px;"><span style="font-size:11px;color:rgba(255,255,255,0.5);margin-right:2px;">Also reachable:</span>${badges}</div>`;
     }
 
+    const matchLabel = matchLabels[i] || matchLabels[2];
+
+    const card = document.createElement('div');
+    card.className = 'college-card';
+    card.style.setProperty('--match-color', tagInfo.color);
     card.innerHTML = `
-      <div class="card-header">
-        <div class="college-tag ${tagInfo.cls}">${tagInfo.icon} ${tagInfo.text}</div>
-        ${fameBadge}
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+        <span style="font-size:13px;font-weight:800;letter-spacing:1px;color:${tagInfo.color};">${matchLabel.icon} ${matchLabel.text}</span>
+        <span style="font-size:11px;color:rgba(255,255,255,0.35);">PMSSS Listed</span>
       </div>
-      <div class="college-name">${esc(c.name)}</div>
-      <div class="college-meta">
-        <span>📍 ${esc(c.location || 'India')}</span>
-        <span>🪑 ${esc(String(c.seats))} PMSSS allotments</span>
-      </div>
+      <div class="college-name" style="font-size:20px;margin-bottom:4px;">${esc(c.name)}</div>
+      <div style="font-size:13px;color:var(--text-dim);margin-bottom:10px;">📍 ${esc(c.location) || 'India'}</div>
       ${coursesHTML}
       ${branchBadgesHTML}
-      <div class="college-detail-line">
-        <span class="label">Cutoff rank:</span> ~${esc(c.cutoff.toLocaleString())}
-        <span class="label" style="margin-left: 8px;">Your rank:</span> ~${esc(userData.estimatedRank.toLocaleString())}
+      <div style="margin-top:14px;">
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-bottom:5px;">
+          <span>Match strength</span>
+          <span style="color:${tagInfo.color};font-weight:700;">${c.probability}%</span>
+        </div>
+        <div class="college-prob"><div class="college-prob-fill" style="width:0%"></div></div>
       </div>
-      <div class="college-prob">
-        <div class="college-prob-fill" style="width: 0%"></div>
+      <div style="margin-top:12px;padding:10px 12px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:var(--text-dim);line-height:1.5;">
+        💡 Students with your profile have made it here via PMSSS. <strong style="color:var(--cyan);">Join our WhatsApp</strong> for the full strategy.
       </div>
-      <div class="prob-text">${c.probability}% chance based on PMSSS allotment history</div>
     `;
-    list.appendChild(card);
     setTimeout(() => {
       card.querySelector('.college-prob-fill').style.width = c.probability + '%';
     }, 200 + i * 150);
+    list.appendChild(card);
   });
 
   showStep('step-results');

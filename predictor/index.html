@@ -803,6 +803,17 @@
       </div>
 
       <div class="field">
+        <label>Gender</label>
+        <select id="det-gender" required>
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Prefer not to say</option>
+        </select>
+        <div class="error" id="err-gender">Please select your gender</div>
+      </div>
+
+      <div class="field">
         <label>Course You Want to Pursue</label>
         <select id="det-stream" required onchange="onStreamChange()">
           <option value="">Select stream</option>
@@ -1273,11 +1284,16 @@ function findBestColleges(rank, category, stream, branch) {
 // Returns { 1: [up to 3], 2: [up to 3], 3: [up to 3] }
 // Tier mapped from fame field: 1→T1, 2→T2, 3/4→T3
 // =========================
-function findCollegesByTier(rank, category, stream, branch) {
+function isWomenOnly(college) {
+  return /(women|female|girls|mahila|lady|ladies)/i.test(college.n || college.name || '');
+}
+
+function findCollegesByTier(rank, category, stream, branch, gender) {
   const byTier = { 1: [], 2: [], 3: [] };
 
   for (const c of COLLEGES) {
     if (!streamMatches(c, stream)) continue;
+    if (gender === 'male' && isWomenOnly(c)) continue;
 
     let cutoff;
     let branchExact = false;
@@ -1639,6 +1655,7 @@ function setupOtpBoxes() {
 function checkColleges() {
   const percent = parseFloat(document.getElementById('det-percent').value);
   const category = document.getElementById('det-category').value;
+  const gender = document.getElementById('det-gender').value;
   const stream = document.getElementById('det-stream').value;
   const branch = document.getElementById('det-branch') ? document.getElementById('det-branch').value : '';
 
@@ -1649,15 +1666,17 @@ function checkColleges() {
     return;
   }
   if (!category) { alert('Please select your category'); return; }
+  if (!gender) { document.getElementById('err-gender').classList.add('show'); return; }
   if (!stream) { alert('Please select your course'); return; }
   if (!DB_READY) { alert('Database still loading, give it a second...'); return; }
 
   const rank = percentToRank(percent);
-  const tiered = findCollegesByTier(rank, category, stream, branch);
+  const tiered = findCollegesByTier(rank, category, stream, branch, gender);
   const allMatches = [...tiered[1], ...tiered[2], ...tiered[3]];
 
   userData.percent = percent;
   userData.category = category;
+  userData.gender = gender;
   userData.stream = stream;
   userData.branch = branch;
   userData.estimatedRank = rank;
@@ -1696,7 +1715,7 @@ function checkColleges() {
 
   // Complete no-match fallback (stream-wide, ignore branch)
   if (allMatches.length === 0) {
-    const streamFallback = findCollegesByTier(rank, category, stream, null);
+    const streamFallback = findCollegesByTier(rank, category, stream, null, gender);
     const streamAll = [...streamFallback[1], ...streamFallback[2], ...streamFallback[3]];
     const branchName = branch || 'this stream';
     if (streamAll.length > 0) {
@@ -1796,6 +1815,7 @@ function checkColleges() {
 function resetTool() {
   document.getElementById('det-percent').value = '';
   document.getElementById('det-category').value = '';
+  document.getElementById('det-gender').value = '';
   document.getElementById('det-stream').value = '';
   showStep('step-details');
 }
